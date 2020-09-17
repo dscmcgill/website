@@ -9,10 +9,14 @@ import Team from './pages/Team';
 import Events from './pages/Events';
 import PastEvents from './pages/PastEvents';
 
+// Components
+import NavBar from './components/Navbar';
+
 function App() {
   return (
     <div className="App">
       <Router>
+        <NavBar />
         <Switch>
           <Route exact path="/" component={Home} />
           <Route exact path="/contact" component={Contact} />
