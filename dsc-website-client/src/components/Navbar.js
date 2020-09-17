@@ -1,9 +1,9 @@
 import React from "react";
 
-export default function PastEvents() {
+export default function Navbar() {
   return (
     <div>
-      <p>PastEvents</p>
+      <p>Navbar</p>
     </div>
   );
 }
