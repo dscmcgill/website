@@ -20,14 +20,14 @@ export default function Home() {
         justify="center"
         alignItems="center"
       >
-        <Grid item xs={7}>
+        <Grid item xs={7} style={{ padding: '50px' }}>
           <Grid
             container
             direction="column"
             justify="center"
             alignItems="center"
           >
-            <Card style={{ boxShadow: 'none' }}>
+            <Card style={{ boxShadow: 'none', margin: '15px' }}>
               <CardMedia
                 style={{
                   width: '200px',
@@ -52,7 +52,12 @@ export default function Home() {
               </Typography>
             </Card>
           </Grid>
-          <Grid container direction="row" justify="center" alignItems="center">
+          <Grid
+            container
+            direction="row"
+            justify="center"
+            alignItems="flex-start"
+          >
             <Grid xs={4}>
               <div style={{ margin: '5px' }}>
                 <Typography variant="h5" style={{ color: '#686c70' }}>
