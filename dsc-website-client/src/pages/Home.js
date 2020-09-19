@@ -6,11 +6,37 @@ import Grid from '@material-ui/core/Grid';
 import Card from '@material-ui/core/Card';
 import CardMedia from '@material-ui/core/CardMedia';
 import Typography from '@material-ui/core/Typography';
+import { makeStyles } from '@material-ui/core';
 
 // Images
 import dsc_logo from './../images/dsc_logo.svg';
 
-export default function Home() {
+// Icons
+import GroupIcon from '@material-ui/icons/Group';
+import DeveloperModeIcon from '@material-ui/icons/DeveloperMode';
+import WorkIcon from '@material-ui/icons/Work';
+import Fab from '@material-ui/core/Fab';
+
+const useStyles = makeStyles((theme) => ({
+  fab: {
+    backgroundColor: '#5584eb',
+  },
+  card: {
+    boxShadow: 'none',
+    margin: '15px',
+  },
+  title: {
+    color: '#686c70',
+    textAlign: 'center',
+  },
+  subTitles: {
+    color: '#686c70',
+    textAlign: 'left',
+  },
+}));
+
+function Home() {
+  const classes = useStyles();
   return (
     <div>
       <Grid
@@ -27,7 +53,7 @@ export default function Home() {
             justify="center"
             alignItems="center"
           >
-            <Card style={{ boxShadow: 'none', margin: '15px' }}>
+            <Card className={classes.card}>
               <CardMedia
                 style={{
                   width: '200px',
@@ -38,16 +64,10 @@ export default function Home() {
                 component="img"
                 title="dsc logo"
               />
-              <Typography
-                style={{ color: '#686c70', textAlign: 'center' }}
-                variant="h2"
-              >
+              <Typography className={classes.title} variant="h2">
                 Developer Student Clubs
               </Typography>
-              <Typography
-                style={{ color: '#686c70', textAlign: 'center' }}
-                variant="h3"
-              >
+              <Typography className={classes.title} variant="h3">
                 McGill University
               </Typography>
             </Card>
@@ -60,7 +80,10 @@ export default function Home() {
           >
             <Grid xs={4}>
               <div style={{ margin: '5px' }}>
-                <Typography variant="h5" style={{ color: '#686c70' }}>
+                <Fab className={classes.fab}>
+                  <GroupIcon style={{ color: '#ffffff' }} />
+                </Fab>
+                <Typography variant="h5" className={classes.subTitles}>
                   Connect
                 </Typography>
                 <Typography style={{ fontSize: '14px' }}>
@@ -72,7 +95,10 @@ export default function Home() {
             </Grid>
             <Grid xs={4}>
               <div style={{ margin: '5px' }}>
-                <Typography variant="h5" style={{ color: '#686c70' }}>
+                <Fab className={classes.fab}>
+                  <DeveloperModeIcon style={{ color: '#ffffff' }} />
+                </Fab>
+                <Typography variant="h5" className={classes.subTitles}>
                   Learn
                 </Typography>
                 <Typography style={{ fontSize: '14px' }}>
@@ -84,7 +110,10 @@ export default function Home() {
             </Grid>
             <Grid xs={4}>
               <div style={{ margin: '5px' }}>
-                <Typography variant="h5" style={{ color: '#686c70' }}>
+                <Fab className={classes.fab}>
+                  <WorkIcon style={{ color: '#ffffff' }} />
+                </Fab>
+                <Typography variant="h5" className={classes.subTitles}>
                   Grow
                 </Typography>
                 <Typography style={{ fontSize: '14px' }}>
@@ -107,3 +136,5 @@ export default function Home() {
     </div>
   );
 }
+
+export default Home;
