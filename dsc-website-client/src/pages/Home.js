@@ -20,7 +20,11 @@ import Fab from '@material-ui/core/Fab';
 const useStyles = makeStyles((theme) => ({
   fab: {
     backgroundColor: '#5584eb',
+    '&$disabled': {
+      backgroundColor: '#5584eb',
+    },
   },
+  disabled: {},
   card: {
     boxShadow: 'none',
     margin: '15px',
@@ -32,6 +36,7 @@ const useStyles = makeStyles((theme) => ({
   subTitles: {
     color: '#686c70',
     textAlign: 'left',
+    padding: '15px 0px',
   },
 }));
 
@@ -80,7 +85,10 @@ function Home() {
           >
             <Grid xs={4}>
               <div style={{ margin: '5px' }}>
-                <Fab className={classes.fab}>
+                <Fab
+                  disabled
+                  classes={{ root: classes.fab, disabled: classes.disabled }}
+                >
                   <GroupIcon style={{ color: '#ffffff' }} />
                 </Fab>
                 <Typography variant="h5" className={classes.subTitles}>
@@ -95,7 +103,10 @@ function Home() {
             </Grid>
             <Grid xs={4}>
               <div style={{ margin: '5px' }}>
-                <Fab className={classes.fab}>
+                <Fab
+                  disabled
+                  classes={{ root: classes.fab, disabled: classes.disabled }}
+                >
                   <DeveloperModeIcon style={{ color: '#ffffff' }} />
                 </Fab>
                 <Typography variant="h5" className={classes.subTitles}>
@@ -110,7 +121,10 @@ function Home() {
             </Grid>
             <Grid xs={4}>
               <div style={{ margin: '5px' }}>
-                <Fab className={classes.fab}>
+                <Fab
+                  disabled
+                  classes={{ root: classes.fab, disabled: classes.disabled }}
+                >
                   <WorkIcon style={{ color: '#ffffff' }} />
                 </Fab>
                 <Typography variant="h5" className={classes.subTitles}>
