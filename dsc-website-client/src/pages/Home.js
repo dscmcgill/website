@@ -51,7 +51,7 @@ function Home() {
         justify="center"
         alignItems="center"
       >
-        <Grid item xs={7} style={{ padding: '50px' }}>
+        <Grid item xs={8} style={{ padding: '50px' }}>
           <Grid
             container
             direction="column"
@@ -142,7 +142,7 @@ function Home() {
         </Grid>
         <Grid
           item
-          xs={5}
+          xs={4}
           className="landingPage"
           style={{ height: '100%' }}
         ></Grid>
