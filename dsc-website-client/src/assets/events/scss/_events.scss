@@ -1,0 +1,23 @@
+home {
+  h1 {
+    color: $text-color;
+    font-size: 40px;
+  }
+  .featured-posts-container {
+    padding: 4em 0 0;
+    display: flex;
+  }
+}
+
+@media screen and (max-width: 900px) {
+  .home {
+    h1 {
+      margin-block-start: 1.5em;
+      margin-block-end: 1.5em;
+    }
+
+    .featured-posts-container {
+      flex-direction: column;
+    }
+  }
+}
