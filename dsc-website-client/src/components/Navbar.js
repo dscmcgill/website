@@ -2,7 +2,7 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 
 // Images
-import dsc_logo from './../images/icon.png';
+import dsc_logo from './../images/dsc_logo.svg';
 
 // MUI
 import AppBar from '@material-ui/core/AppBar';
@@ -16,24 +16,24 @@ import { makeStyles } from '@material-ui/core';
 const useStyles = makeStyles((theme) => ({
   appBar: {
     backgroundColor: 'transparent',
-    boxShadow: 'none',
+    boxShadow: 'none'
   },
   logo: {
-    width: '80px',
+    width: '80px'
   },
   button_logo: {
     margin: '40px 10px',
-    padding: '5px 30px',
+    padding: '5px 30px'
   },
   buttonLeftSide: {
     margin: 'auto 20px',
-    padding: '5px 70px',
+    padding: '5px 70px'
   },
   buttonLeftTypo: {
     fontSize: '32px',
     textTransform: 'none',
-    color: '#686c70',
-  },
+    color: '#686c70'
+  }
 }));
 
 function Navbar() {

@@ -21,23 +21,23 @@ const useStyles = makeStyles((theme) => ({
   fab: {
     backgroundColor: '#5584eb',
     '&$disabled': {
-      backgroundColor: '#5584eb',
-    },
+      backgroundColor: '#5584eb'
+    }
   },
   disabled: {},
   card: {
     boxShadow: 'none',
-    margin: '15px',
+    margin: '15px'
   },
   title: {
     color: '#686c70',
-    textAlign: 'center',
+    textAlign: 'center'
   },
   subTitles: {
     color: '#686c70',
     textAlign: 'left',
-    padding: '15px 0px',
-  },
+    padding: '15px 0px'
+  }
 }));
 
 function Home() {
@@ -63,7 +63,7 @@ function Home() {
                 style={{
                   width: '200px',
                   display: 'block',
-                  margin: 'auto',
+                  margin: 'auto'
                 }}
                 src={dsc_logo}
                 component="img"
