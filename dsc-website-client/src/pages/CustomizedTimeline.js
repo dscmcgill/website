@@ -11,11 +11,8 @@ import FastfoodIcon from '@material-ui/icons/Fastfood';
 import LaptopMacIcon from '@material-ui/icons/LaptopMac';
 import HotelIcon from '@material-ui/icons/Hotel';
 import RepeatIcon from '@material-ui/icons/Repeat';
-import Paper from '@material-ui/core/Paper';
 import Typography from '@material-ui/core/Typography';
 import Box from '@material-ui/core/Box';
-import logo from '../images/dsc_logo.svg';
-
 
 import Card from '../components/CustomizedCard'
 const useStyles = makeStyles((theme) => ({
