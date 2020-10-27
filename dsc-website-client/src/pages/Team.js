@@ -1,6 +1,6 @@
 import React from 'react';
 import './../App.css';
-import {Image} from "react-bootstrap";
+import { Image } from "react-bootstrap";
 import { makeStyles } from '@material-ui/core';
 import Typography from '@material-ui/core/Typography';
 
@@ -9,7 +9,6 @@ import profile_picture from './../images/profile_picture.jpg';
 
 // MUI
 import Grid from '@material-ui/core/Grid';
-
 
 const useStyles = makeStyles((theme) => ({
   fab: {
@@ -45,50 +44,50 @@ function Team() {
     return (
       <React.Fragment>
         <Grid item xs={3}>
-        <Image src = {profile_picture} circle className = "profile-pic" style={{width: '120px', height: '120px', borderRadius: '50%',}}/>
-        <h3>Name</h3>
-        <h3>Position</h3>
+          <Image src={profile_picture} circle className="profile-pic" style={{ width: '120px', height: '120px', borderRadius: '50%', }} />
+          <h3>Name</h3>
+          <h3>Position</h3>
         </Grid>
         <Grid item xs={3}>
-        <Image src = {profile_picture} circle className = "profile-pic" style={{width: '120px', height: '120px', borderRadius: '50%',}}/>
-        <h3>Name</h3>
-        <h3>Position</h3>
+          <Image src={profile_picture} circle className="profile-pic" style={{ width: '120px', height: '120px', borderRadius: '50%', }} />
+          <h3>Name</h3>
+          <h3>Position</h3>
         </Grid>
         <Grid item xs={3}>
-        <Image src = {profile_picture} circle className = "profile-pic" style={{ width: '120px', height: '120px', borderRadius: '50%',}}/>
-        <h3>Name</h3>
-        <h3>Position</h3>
+          <Image src={profile_picture} circle className="profile-pic" style={{ width: '120px', height: '120px', borderRadius: '50%', }} />
+          <h3>Name</h3>
+          <h3>Position</h3>
         </Grid>
         <Grid item xs={3}>
-        <Image src = {profile_picture} circle className = "profile-pic" style={{width: '120px', height: '120px', borderRadius: '50%',}}/>
-        <h3>Name</h3>
-        <h3>Position</h3>
+          <Image src={profile_picture} circle className="profile-pic" style={{ width: '120px', height: '120px', borderRadius: '50%', }} />
+          <h3>Name</h3>
+          <h3>Position</h3>
         </Grid>
       </React.Fragment>
     );
   }
 
   return (
-    <div className = {classes.grid}>
-    <Grid
-    container 
-    spacing = {2}
-    style={{margin: '25%'}}
-    alignItems="center"
-    >
-      <Typography className={classes.title} variant="h4">
-        Meet the Team!
+    <div className={classes.grid}>
+      <Grid
+        container
+        spacing={2}
+        style={{ margin: '25%' }}
+        alignItems="center"
+      >
+        <Typography className={classes.title} variant="h4">
+          Meet the Team!
       </Typography>
-      <Grid container item xs={12} style={{margin: ''}}>
-        <FormRow />
-      </Grid>
+        <Grid container item xs={12} style={{ margin: '' }}>
+          <FormRow />
+        </Grid>
 
-      <Grid container item xs={12} style={{margin: ''}}>
-        <FormRow />
-      </Grid>
+        <Grid container item xs={12} style={{ margin: '' }}>
+          <FormRow />
+        </Grid>
 
       </Grid>
-      </div>
+    </div>
   );
 }
 
