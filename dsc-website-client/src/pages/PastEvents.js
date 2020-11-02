@@ -37,7 +37,7 @@ const timeline = [
 export default function PastEvents() {
   const mystyle = {
     position: "relative",
-    top: "100px",
+    top: "150px",
   };
 
   return (
