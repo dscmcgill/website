@@ -31,22 +31,21 @@ export default function MediaCard(props) {
   }))
 
   const classes = useStyles()
-
-  return (
-    <Card className={classes.root}>
-      <CardHeader
-        title={props.title}
-        subheader={props.subheader}
-      />
-      <CardMedia
-        className={classes.media}
-        image={props.image}
-      />
-      <CardContent>
-        <Typography variant="body2" color="textSecondary" component="p">
-          {props.content}
-        </Typography>
-      </CardContent>
-    </Card>
-  )
+    return (
+      <Card className={classes.root}>
+        <CardHeader
+          title={props.title}
+          subheader={props.subheader}
+        />
+        <CardMedia
+          className={classes.media}
+          image={props.image}
+        />
+        <CardContent>
+          <Typography variant="body2" color="textSecondary" component="p">
+            {props.content}
+          </Typography>
+        </CardContent>
+      </Card>
+    )
 }
