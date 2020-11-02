@@ -15,9 +15,10 @@ import { makeStyles } from '@material-ui/core';
 
 const useStyles = makeStyles((theme) => ({
   appBar: {
-    backgroundColor: 'transparent',
+    backgroundColor: 'white',
     boxShadow: 'none'
   },
+
   logo: {
     width: '80px'
   },
