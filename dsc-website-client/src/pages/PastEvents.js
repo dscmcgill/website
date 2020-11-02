@@ -23,42 +23,49 @@ const timeline = [
   rState, button, butjqnwdkjnsacn
   qwdjer a collection of` },
   {
-    time: "2019.12.02", image:logo, icon: <AdbIcon />, title: "title2", subheader: "subheader2",
+    time: "2019.12.02", image: logo, icon: <AdbIcon />, title: "title2", subheader: "subheader2",
     content: `dqwjdqlwldmlkqmskcmls
   qwdijqoiejdqkckljneiojdfojqoeljcf
   qwoifdjoiqejfclqnejnlcfjqwndlj` },
   {
-    time: "2019.12.03", image: logo, icon: <AdbIcon color="secondary"  />, title: "title3", subheader: "subheader3",
+    time: "2019.12.03", image: logo, icon: <AdbIcon color="secondary" />, title: "title3", subheader: "subheader3",
     content: `qoifhjcioqejfoicnjqew
   qwudhuqehfchqeoijhfdpiqjwpfijcqew
   qeijfdoiqejlcffiocijfe` }
 ]
 
 export default function PastEvents() {
+  const mystyle = {
+    position: "relative",
+    top: "100px",
+  };
+
   return (
-    <Timeline align="alternate">
-      {
-        timeline.map((item, index) =>
-          <TimelineItem key={index}>
-            <TimelineOppositeContent>
-              <Typography variant="body2" color="textSecondary">
-                {item.time}
-              </Typography>
-            </TimelineOppositeContent>
-            <TimelineSeparator>
-              <TimelineDot>
-                {item.icon}
-              </TimelineDot>
-              <TimelineConnector />
-            </TimelineSeparator>
-            <TimelineContent>
-              <Box>
-                <CustomizedCard float={(index % 2 === 0) ? "left" : "right"} title={item.title} subheader={item.subheader} content={item.content} image={item.image}/>
-              </Box>
-            </TimelineContent>
-          </TimelineItem>
-        )
-      }
-    </Timeline>
+    <div style={mystyle}>
+      <Timeline align="alternate">
+        {
+          timeline.map((item, index) =>
+            <TimelineItem key={index}>
+              <TimelineOppositeContent>
+                <Typography variant="body2" color="textSecondary">
+                  {item.time}
+                </Typography>
+              </TimelineOppositeContent>
+              <TimelineSeparator>
+                <TimelineDot>
+                  {item.icon}
+                </TimelineDot>
+                <TimelineConnector />
+              </TimelineSeparator>
+              <TimelineContent>
+                <Box>
+                  <CustomizedCard float={(index % 2 === 0) ? "left" : "right"} title={item.title} subheader={item.subheader} content={item.content} image={item.image} />
+                </Box>
+              </TimelineContent>
+            </TimelineItem>
+          )
+        }
+      </Timeline>
+    </div>
   )
 }
