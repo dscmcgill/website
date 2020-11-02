@@ -1,3 +1,7 @@
+
+@import url('https://fonts.googleapis.com/css?family=Product+Sans:regular,bold,italic&subset=latin,latin-ext');
+
+
 html,
 body {
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
@@ -31,4 +35,14 @@ body {
       0 64px;
   background-color: #ffffff;
   background-size: 64px 128px;
+}
+
+.team {
+  background-color:rgb(255, 255, 255);
+  background-image: linear-gradient(rgb(0, 0, 0, 0.1) 2px, transparent 2px),
+  linear-gradient(90deg, rgba(0, 0, 0, 0.1) 2px, transparent 2px),
+  linear-gradient(rgba(0, 0, 0, 0.1) 1px, transparent 0px),
+  linear-gradient(90deg, rgba(0, 0, 0, 0.1) 1px, transparent 2px);
+  background-size: 100px 100px, 100px 100px, 20px 20px, 20px 20px;
+  background-position:-1px -1px, -1px -1px, -1px -1px, -1px -1px;
 }
