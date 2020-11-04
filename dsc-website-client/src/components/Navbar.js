@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useEffect, useState } from 'react';
 import { Link } from 'react-router-dom';
 
 // Images
@@ -37,23 +37,45 @@ const useStyles = makeStyles((theme) => ({
   }
 }));
 
+const goToDiv = (id) => {
+  document.getElementById(id).scrollIntoView({ behavior: 'smooth' });
+};
+
 function Navbar() {
   const classes = useStyles();
+
   return (
     <AppBar className={classes.appBar}>
       <Toolbar>
         {/* Left side */}
-        <Button component={Link} to="/" className={classes.button_logo}>
+        <Button
+          className={classes.button_logo}
+          onClick={() => {
+            goToDiv('home');
+          }}
+        >
           <Tooltip title="Home">
             <img src={dsc_logo} alt="logo" className={classes.logo} />
           </Tooltip>
         </Button>
         {/* Right side */}
         <Grid container direction="row" justify="flex-end" alignItems="center">
-          <Button size="large" className={classes.buttonLeftSide}>
+          <Button
+            size="large"
+            className={classes.buttonLeftSide}
+            onClick={() => {
+              goToDiv('team');
+            }}
+          >
             <Typography className={classes.buttonLeftTypo}>Team</Typography>
           </Button>
-          <Button size="large" className={classes.buttonLeftSide}>
+          <Button
+            size="large"
+            className={classes.buttonLeftSide}
+            onClick={() => {
+              goToDiv('events');
+            }}
+          >
             <Typography className={classes.buttonLeftTypo}>Events</Typography>
           </Button>
           <Button size="large" className={classes.buttonLeftSide}>

@@ -43,7 +43,7 @@ const useStyles = makeStyles((theme) => ({
 function Home() {
   const classes = useStyles();
   return (
-    <div>
+    <div id="home">
       <Grid
         style={{ height: '100vh' }}
         container

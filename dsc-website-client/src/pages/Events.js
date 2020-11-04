@@ -2,7 +2,7 @@ import React from 'react';
 
 export default function Events() {
   return (
-    <div>
+    <div id="events">
       <p>Events</p>
     </div>
   );
