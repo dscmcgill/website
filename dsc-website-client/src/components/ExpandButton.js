@@ -4,22 +4,23 @@ import MuiAccordion from '@material-ui/core/Accordion';
 import MuiAccordionSummary from '@material-ui/core/AccordionSummary';
 import MuiAccordionDetails from '@material-ui/core/AccordionDetails';
 import Typography from '@material-ui/core/Typography';
+import Grid from '@material-ui/core/Grid';
 
 const Accordion = withStyles({
   root: {
     border: '1px solid rgba(0, 0, 0, .125)',
     boxShadow: 'none',
     '&:not(:last-child)': {
-      borderBottom: 0,
+      borderBottom: 0
     },
     '&:before': {
-      display: 'none',
+      display: 'none'
     },
     '&$expanded': {
-      margin: 'auto',
-    },
+      margin: 'auto'
+    }
   },
-  expanded: {},
+  expanded: {}
 })(MuiAccordion);
 
 const AccordionSummary = withStyles({
@@ -29,21 +30,21 @@ const AccordionSummary = withStyles({
     marginBottom: -1,
     minHeight: 56,
     '&$expanded': {
-      minHeight: 56,
-    },
+      minHeight: 56
+    }
   },
   content: {
     '&$expanded': {
-      margin: '12px 0',
-    },
+      margin: '12px 0'
+    }
   },
-  expanded: {},
+  expanded: {}
 })(MuiAccordionSummary);
 
 const AccordionDetails = withStyles((theme) => ({
   root: {
-    padding: theme.spacing(2),
-  },
+    padding: theme.spacing(2)
+  }
 }))(MuiAccordionDetails);
 
 export default function CustomizedAccordions(props) {
@@ -55,12 +56,18 @@ export default function CustomizedAccordions(props) {
 
   return (
     <div>
-      <Accordion square expanded={expanded === 'panel1'} onChange={handleChange('panel1')}>
+      <Accordion
+        square
+        expanded={expanded === 'panel1'}
+        onChange={handleChange('panel1')}
+      >
         <AccordionSummary aria-controls="panel1d-content" id="panel1d-header">
           <Typography>{props.title}</Typography>
         </AccordionSummary>
         <AccordionDetails>
-          {props.content}
+          <Grid container justify="center" alignItems="center">
+            {props.content}
+          </Grid>
         </AccordionDetails>
       </Accordion>
     </div>
