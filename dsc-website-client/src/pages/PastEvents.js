@@ -10,6 +10,7 @@ import Typography from '@material-ui/core/Typography'
 import Box from '@material-ui/core/Box'
 
 import CustomizedCard from '../components/CustomizedCard'
+import ExpandButton from '../components/ExpandButton'
 
 import logo from '../images/dsc_logo.svg'
 
@@ -34,7 +35,7 @@ const timeline = [
   qeijfdoiqejlcffiocijfe` }
 ]
 
-export default function PastEvents() {
+function PastEvents() {
   const mystyle = {
     position: "relative",
     top: "150px",
@@ -69,3 +70,16 @@ export default function PastEvents() {
     </div>
   )
 }
+
+function PastEventsPanel() {
+  const mystyle = {
+    position: "relative",
+    top: "600px",
+  };
+  return (
+    <div style={mystyle}>
+      <ExpandButton title="Past Events" content={PastEvents()} />
+    </div>
+  )
+}
+export default PastEventsPanel
