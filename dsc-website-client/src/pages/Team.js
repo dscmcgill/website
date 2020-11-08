@@ -5,14 +5,16 @@ import './../App.css';
 import { makeStyles } from '@material-ui/core';
 import Typography from '@material-ui/core/Typography';
 
+
+import { team_members } from './../static/constants/Constants';
+
 //Picture import
-import squares from './../images/squares.png';
-import saba_fathi from './../images/saba_fathi.jpg';
-import pulasthi_peiris from './../images/pulasthi_peiris.JPG';
-import parsa_yadollahi from './../images/parsa_yadollahi.jpeg';
-import mohamed_beydoun from './../images/mohamed_beydoun.jpg';
-import julie_tian from './../images/julie_tian.jpg';
-import profile_picture from './../images/profile_picture.jpg';
+import saba_fathi from './../static/images/saba_fathi.jpg';
+import pulasthi_peiris from './../static/images/pulasthi_peiris.JPG';
+import parsa_yadollahi from './../static/images/parsa_yadollahi.jpeg';
+import mohamed_beydoun from './../static/images/mohamed_beydoun.jpg';
+import julie_tian from './../static/images/julie_tian.jpg';
+import profile_picture from './../static/images/profile_picture.jpg';
 
 // MUI
 import Grid from '@material-ui/core/Grid';
@@ -163,12 +165,45 @@ function Team() {
               </Grid>
             </Grid>
             <Grid alignItems="flex-start" container item s={6}>
-              <Typography className={classes.description}>
+              <Typography className={classes.description} style={{ textAlign: 'left'}}>
                 Basic Youtuber, Aspiring Podcaster.
               </Typography>
             </Grid>
           </Grid>
 
+          
+          <Grid
+            xs={4}
+            item
+            container
+            justify="left"
+            className={classes.individual}
+            direction="column"
+          >
+            <Grid
+              className={classes.box}
+              item
+              container
+              justify="center"
+              direction="row"
+            >
+              <Grid item xs={6}>
+                <img src={profile_picture} className={classes.profile_pic} />
+              </Grid>
+              <Grid item xs={6} className={classes.name_pos}>
+                <Typography className={classes.name}>
+                  {team_members[0].name}
+                </Typography>
+                <Typography className={classes.position}>DSC Lead</Typography>
+              </Grid>
+            </Grid>
+            <Grid alignItems="flex-start" container item s={6}>
+              <Typography className={classes.description} style={{ textAlign: 'left'}}>
+                Basic Youtuber, Aspiring Podcaster.
+              </Typography>
+            </Grid>
+          </Grid>
+          
           <Grid
             xs={4}
             item
@@ -198,9 +233,26 @@ function Team() {
             </Grid>
             <Grid item s={6}>
               <Typography className={classes.description}>
-                Parsa is a third year Computer Science student interested in
-                software engineering and quantitative finance, and being the
-                six-quatre waste yute lord.
+                Parsa is a third year Computer Science student
+                interested in software engineering and quantitative finance,
+                and being the six-quatre waste yute lord.
+          </Typography>
+            </Grid>
+          </Grid>
+
+          <Grid xs={4} item container justify="left" className={classes.individual} direction="column">
+            <Grid className={classes.box} item container justify="center" direction="row">
+              <Grid item xs={6}>
+                <img src={profile_picture} className={classes.profile_pic} />
+              </Grid>
+              <Grid item xs={6} className={classes.name_pos} >
+                <Typography className={classes.name}>Massy Mahamli</Typography>
+                <Typography className={classes.position}>Design Lead & <br />Front-End Developer</Typography>
+              </Grid>
+            </Grid>
+            <Grid alignItems="flex-start" container item s={6}>
+              <Typography className={classes.description}>
+                U3 Software engineering student, love creative tech and filmmaking.
               </Typography>
             </Grid>
           </Grid>
@@ -546,15 +598,16 @@ function Team() {
                   className={classes.profile_pic}
                 />
               </Grid>
-              <Grid item xs={6} className={classes.name_pos}>
-                <Typography className={classes.name}>Agent Smith</Typography>
-                <Typography className={classes.position}>Virus</Typography>
+              <Grid item xs={6} className={classes.name_pos} >
+                <Typography className={classes.name}>James Ting</Typography>
+                <Typography className={classes.position}>Back-End Developer</Typography>
               </Grid>
             </Grid>
             <Grid item s={6}>
               <Typography className={classes.description}>
-                Never send a human to do a machine's job. We are placeholders
-                for future members...
+                U3 Computer Science student from Vancouver,
+                who enjoys solving problems,
+                coding programs and flying planes
               </Typography>
             </Grid>
           </Grid>

@@ -2,7 +2,7 @@ import React, { useEffect, useState } from 'react';
 import { Link } from 'react-router-dom';
 
 // Images
-import dsc_logo from './../images/dsc_logo.svg';
+import dsc_logo from './../static/images/dsc_logo.svg'
 
 // MUI
 import AppBar from '@material-ui/core/AppBar';
