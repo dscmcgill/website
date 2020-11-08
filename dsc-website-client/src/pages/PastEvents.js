@@ -52,8 +52,7 @@ const timeline = [
 
 function PastEvents() {
   const mystyle = {
-    position: 'relative',
-    top: '150px'
+    //put your style here
   };
 
   return (
@@ -90,8 +89,7 @@ function PastEvents() {
 
 function PastEventsPanel() {
   const mystyle = {
-    position: 'relative',
-    top: '600px'
+    //put your style here
   };
   return (
     <div style={mystyle}>
