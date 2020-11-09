@@ -3,6 +3,13 @@ import logo from '../images/dsc_logo.svg';
 
 import AdbIcon from '@material-ui/icons/Adb';
 import FastfoodIcon from '@material-ui/icons/Fastfood';
+// import saba_fathi from '../images/saba_fathi.jpg';
+// import pulasthi_peiris from './../static/images/pulasthi_peiris.JPG';
+// import parsa_yadollahi from './../static/images/parsa_yadollahi.jpeg';
+// import mohamed_beydoun from './../static/images/mohamed_beydoun.jpg';
+// import julie_tian from './../static/images/julie_tian.jpg';
+// import profile_picture from '../static/images/profile_picture.jpg';
+
 
 export const timeline = [
   {
@@ -53,7 +60,7 @@ export const team_members = [
     Saba is a first year software engineering student and is interested 
     in the gaming industry, cursed memes and is the embodiment of 🗿. 
     Rumor has it, he lives off steak.`,
-    // picture: 
+    // picture: 'saba_fathi'
   },
   // 2
   {
@@ -120,7 +127,7 @@ export const team_members = [
   // 9
   {
     name: 'Michael Li',
-    position: 'Back-End Develope',
+    position: 'Back-End Developer',
     description: `U3 SWE student, enjoy watching and playing fútbol, hala madrid ⚽`,
     // picture: 
   },
@@ -133,7 +140,7 @@ export const team_members = [
   },
   // 11
   {
-    name: 'Massy Mahaml',
+    name: 'Massy Mahamli',
     position: 'Design Lead & Frontend Developer',
     description: `U3 Software engineering student , love creative tech and filmmaking`,
     // picture: 
