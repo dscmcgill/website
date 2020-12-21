@@ -10,14 +10,49 @@ import Typography from '@material-ui/core/Typography';
 import Box from '@material-ui/core/Box';
 
 import CustomizedCard from '../components/CustomizedCard';
+import ExpandButton from '../components/ExpandButton';
 
-// Constants
-import { timeline } from './../static/constants/Constants';
+import logo from '../images/dsc_logo.svg';
 
-export default function PastEvents() {
+import AdbIcon from '@material-ui/icons/Adb';
+import FastfoodIcon from '@material-ui/icons/Fastfood';
+
+const timeline = [
+  {
+    time: '2019.12.01',
+    image: logo,
+    icon: <FastfoodIcon />,
+    title: 'title1',
+    subheader: 'subheader1',
+    content: `ey, altKey, metaKey, ge
+  rState, button, butjqnwdkjnsacn
+  qwdjer a collection of`
+  },
+  {
+    time: '2019.12.02',
+    image: logo,
+    icon: <AdbIcon />,
+    title: 'title2',
+    subheader: 'subheader2',
+    content: `dqwjdqlwldmlkqmskcmls
+  qwdijqoiejdqkckljneiojdfojqoeljcf
+  qwoifdjoiqejfclqnejnlcfjqwndlj`
+  },
+  {
+    time: '2019.12.03',
+    image: logo,
+    icon: <AdbIcon color="secondary" />,
+    title: 'title3',
+    subheader: 'subheader3',
+    content: `qoifhjcioqejfoicnjqew
+  qwudhuqehfchqeoijhfdpiqjwpfijcqew
+  qeijfdoiqejlcffiocijfe`
+  }
+];
+
+function PastEvents() {
   const mystyle = {
-    position: 'relative',
-    top: '150px'
+    //put your style here
   };
 
   return (
@@ -51,3 +86,14 @@ export default function PastEvents() {
     </div>
   );
 }
+function PastEventsPanel() {
+  const mystyle = {
+    //put your style here
+  };
+  return (
+    <div style={mystyle}>
+      <ExpandButton title="Past Events" content={PastEvents()} />
+    </div>
+  );
+}
+export default PastEventsPanel;
