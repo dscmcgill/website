@@ -9,7 +9,7 @@ import Typography from '@material-ui/core/Typography';
 import { makeStyles } from '@material-ui/core';
 
 // Images
-import dsc_logo from './../images/dsc_logo.svg';
+import dsc_logo from './../static/images/dsc_logo.svg';
 
 // Icons
 import GroupIcon from '@material-ui/icons/Group';
@@ -43,7 +43,7 @@ const useStyles = makeStyles((theme) => ({
 function Home() {
   const classes = useStyles();
   return (
-    <div>
+    <div id="home">
       <Grid
         style={{ height: '100vh' }}
         container
