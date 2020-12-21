@@ -12,7 +12,7 @@ import Box from '@material-ui/core/Box';
 import CustomizedCard from '../components/CustomizedCard';
 import ExpandButton from '../components/ExpandButton';
 
-import logo from '../images/dsc_logo.svg';
+import logo from '../static/images/dsc_logo.svg';
 
 import AdbIcon from '@material-ui/icons/Adb';
 import FastfoodIcon from '@material-ui/icons/Fastfood';
