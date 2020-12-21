@@ -86,7 +86,6 @@ function PastEvents() {
     </div>
   );
 }
-
 function PastEventsPanel() {
   const mystyle = {
     //put your style here
