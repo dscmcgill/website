@@ -1,26 +1,12 @@
 import React from 'react';
 import './../App.css';
 
-// import { Image } from "react-bootstrap";
+// MUI
 import { makeStyles } from '@material-ui/core';
+import Grid from '@material-ui/core/Grid';
 import Typography from '@material-ui/core/Typography';
 
-import {
-  team_members,
-  teams_leads,
-  background_squares
-} from './../static/constants/Constants';
-
-//Picture import
-import saba_fathi from './../static/images/saba_fathi.jpg';
-import pulasthi_peiris from './../static/images/pulasthi_peiris.JPG';
-import parsa_yadollahi from './../static/images/parsa_yadollahi.jpeg';
-import mohamed_beydoun from './../static/images/mohamed_beydoun.jpg';
-import julie_tian from './../static/images/julie_tian.jpg';
-import profile_picture from './../static/images/profile_picture.jpg';
-
-// MUI
-import Grid from '@material-ui/core/Grid';
+import { team_members, teams_leads } from './../static/constants/Constants';
 
 const useStyles = makeStyles((theme) => ({
   fab: {
@@ -29,14 +15,10 @@ const useStyles = makeStyles((theme) => ({
       backgroundColor: '#5584eb'
     }
   },
-
-  disabled: {},
-
   card: {
     boxShadow: 'none',
     margin: '15px'
   },
-
   title: {
     color: '#686c70',
     textAlign: 'center',
@@ -57,7 +39,6 @@ const useStyles = makeStyles((theme) => ({
   not_lead: {
     color: '#F4B400',
     fontSize: '2.5rem',
-    // margin: '25px 0 20px 100px',
     fontWeight: 'bold',
     fontFamily: 'Product Sans',
     background: 'rgba(255,255,255,0.5)',
