@@ -100,7 +100,6 @@ const useStyles = makeStyles((theme) => ({
 function Team() {
   const classes = useStyles();
   const leads = teams_leads.map((member) => {
-    console.log(member.picture);
     return (
       <Grid
         xs={4}

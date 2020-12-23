@@ -10,6 +10,10 @@ import mohamed_beydoun from './../images/mohamed_beydoun.jpg';
 import julie_tian from './../images/julie_tian.jpg';
 import profile_picture from '../images/profile_picture.jpg';
 
+import css_events from '../images/upcomingEvents/css_event.jpeg';
+import react_events from '../images/upcomingEvents/react_event.png';
+import tensor_flow_event from '../images/upcomingEvents/tensor_flow_event.png';
+
 export const timeline = [
   {
     time: '2019.12.01',
@@ -93,7 +97,6 @@ export const teams_leads = [
 ];
 
 export const team_members = [
-  // 1
   {
     name: 'Saba Fathi',
     position: 'Front-End Dev',
@@ -103,7 +106,6 @@ export const team_members = [
     Rumor has it, he lives off steak.`,
     picture: saba_fathi
   },
-  // 4
   {
     name: 'Pulasthi Peiris',
     position: 'Front-End Developer',
@@ -113,35 +115,30 @@ export const team_members = [
     and enjoys automating things to make life easier.`,
     picture: pulasthi_peiris
   },
-  // 5
   {
     name: 'Julie Tian',
     position: 'Back-End Developer',
     description: 'U3 Pharmacology and Computer Science. I build keyboards',
     picture: julie_tian
   },
-  // 9
   {
     name: 'Michael Li',
     position: 'Back-End Developer',
     description: `U3 SWE student, enjoy watching and playing fútbol, hala madrid ⚽`,
     picture: profile_picture
   },
-  // 10
   {
     name: 'Changjun Zhou',
     position: 'Front-End Developer',
     description: `U2 SWE student, a secret guy who is trying to find how to use docker.`,
     picture: profile_picture
   },
-  // 11
   {
     name: 'Massy Mahamli',
     position: 'Design Lead & Frontend Developer',
     description: `U3 Software engineering student , love creative tech and filmmaking`,
     picture: profile_picture
   },
-  // 12
   {
     name: 'James Ting',
     position: 'Back-End Developer',
@@ -149,14 +146,12 @@ export const team_members = [
     who enjoys solving problems, coding programs and flying planes`,
     picture: profile_picture
   },
-  // 13
   {
     name: 'Ridwan Kurmally',
     position: 'Back-End Developer',
     description: `U3 Honours CS student, love gaming, football and programming challenges`,
     picture: profile_picture
   },
-  // 14
   {
     name: 'Kareem Sayed',
     position: 'Back-End Developer',
@@ -164,5 +159,27 @@ export const team_members = [
     fascinated with Fintech, algorithmic trading,
     as well as building the future of the financial and technical world`,
     picture: profile_picture
+  }
+];
+
+export const upcoming_event_one = {
+  date: 'DATE',
+  title: 'Title',
+  descriprion: 'description',
+  image: tensor_flow_event
+};
+
+export const next_two_coming_events = [
+  {
+    date: 'date1',
+    title: 'Title1',
+    descriprion: 'description1',
+    image: css_events
+  },
+  {
+    date: 'date2',
+    title: 'Title2',
+    descriprion: 'description2',
+    image: react_events
   }
 ];

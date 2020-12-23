@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { react_events } from 'react';
 
 // MUI
 import { makeStyles } from '@material-ui/core/styles';
@@ -9,10 +9,10 @@ import CardContent from '@material-ui/core/CardContent';
 import Typography from '@material-ui/core/Typography';
 import Button from '@material-ui/core/Button';
 
-// Events
-import css_events from '../static/images/upcomingEvents/css_event.jpeg';
-import react_events from '../static/images/upcomingEvents/react_event.png';
-import tensor_flow_event from '../static/images/upcomingEvents/tensor_flow_event.png';
+import {
+  upcoming_event_one,
+  next_two_coming_events
+} from './../static/constants/Constants';
 
 const useStyles = makeStyles({
   root: {
@@ -29,6 +29,33 @@ const useStyles = makeStyles({
 
 export default function Events() {
   const classes = useStyles();
+
+  const next_two_events = next_two_coming_events.map((event) => {
+    return (
+      <Grid container item xs={12} spacing={3}>
+        <Card className={classes.line}>
+          <CardMedia
+            className={classes.media}
+            src={event.image}
+            component="img"
+            title="react Event"
+          />
+          <CardContent>
+            <Typography gutterBottom variant="h5" component="h2">
+              {event.date}
+            </Typography>
+            <Typography gutterBottom variant="h3" component="h2">
+              {event.title}
+            </Typography>
+            <Typography variant="body2" color="textSecondary" component="p">
+              {event.descriprion}
+            </Typography>
+            <Button variant="contained">Sign up</Button>
+          </CardContent>
+        </Card>
+      </Grid>
+    );
+  });
 
   return (
     <div id="events">
@@ -50,19 +77,19 @@ export default function Events() {
           <Card className={classes.line}>
             <CardMedia
               className={classes.media}
-              src={tensor_flow_event}
+              src={upcoming_event_one.image}
               component="img"
               title="Tensorflow Event"
             />
             <CardContent>
               <Typography gutterBottom variant="h5" component="h2">
-                Date
+                {upcoming_event_one.date}
               </Typography>
               <Typography gutterBottom variant="h3" component="h2">
-                Tensor Flow workshop
+                {upcoming_event_one.title}
               </Typography>
               <Typography variant="body2" color="textSecondary" component="p">
-                learn tensorflow
+                {upcoming_event_one.descriprion}
               </Typography>
               <Button variant="contained">Sign up</Button>
             </CardContent>
@@ -79,60 +106,9 @@ export default function Events() {
             direction="column"
             justify="center"
             alignItems="center"
-            spacing={5}
+            spacing={3}
           >
-            <Grid container item xs={12}>
-              <Card className={classes.line}>
-                <CardMedia
-                  className={classes.media}
-                  src={css_events}
-                  component="img"
-                  title="css event"
-                />
-                <CardContent>
-                  <Typography gutterBottom variant="h5" component="h2">
-                    Date
-                  </Typography>
-                  <Typography gutterBottom variant="h3" component="h2">
-                    CSS
-                  </Typography>
-                  <Typography
-                    variant="body2"
-                    color="textSecondary"
-                    component="p"
-                  >
-                    Learn how to css
-                  </Typography>
-                  <Button variant="contained">Sign up</Button>
-                </CardContent>
-              </Card>
-            </Grid>
-            <Grid container item xs={12} spacing={3}>
-              <Card className={classes.line}>
-                <CardMedia
-                  className={classes.media}
-                  src={react_events}
-                  component="img"
-                  title="react Event"
-                />
-                <CardContent>
-                  <Typography gutterBottom variant="h5" component="h2">
-                    Date
-                  </Typography>
-                  <Typography gutterBottom variant="h3" component="h2">
-                    React
-                  </Typography>
-                  <Typography
-                    variant="body2"
-                    color="textSecondary"
-                    component="p"
-                  >
-                    Learn how to react
-                  </Typography>
-                  <Button variant="contained">Sign up</Button>
-                </CardContent>
-              </Card>
-            </Grid>
+            {next_two_events}
           </Grid>
         </Grid>
       </Grid>
