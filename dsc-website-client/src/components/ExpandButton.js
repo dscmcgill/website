@@ -5,6 +5,12 @@ import MuiAccordionSummary from '@material-ui/core/AccordionSummary';
 import MuiAccordionDetails from '@material-ui/core/AccordionDetails';
 import Typography from '@material-ui/core/Typography';
 import Grid from '@material-ui/core/Grid';
+import { Button } from '@material-ui/core';
+
+// Icons
+import IconButton from '@material-ui/core/IconButton';
+import ExpandMoreIcon from '@material-ui/icons/ExpandMore';
+import ExpandLessIcon from '@material-ui/icons/ExpandLess';
 
 const Accordion = withStyles({
   root: {
@@ -48,28 +54,37 @@ const AccordionDetails = withStyles((theme) => ({
 }))(MuiAccordionDetails);
 
 export default function CustomizedAccordions(props) {
-  const [expanded, setExpanded] = React.useState('panel1');
+  const [expanded, setExpanded] = React.useState(false);
+  // const [arrowButton, setArrowButton] = React.useState(<ExpandMoreIcon />);
+  const [iconChange, setIcon] = React.useState(false);
 
-  const handleChange = (panel) => (event, newExpanded) => {
+  const handleChange = (panel) => (newExpanded) => {
     setExpanded(newExpanded ? panel : false);
   };
 
   return (
-    <div>
-      <Accordion
-        square
-        expanded={expanded === 'panel1'}
-        onChange={handleChange('panel1')}
-      >
-        <AccordionSummary aria-controls="panel1d-content" id="panel1d-header">
-          <Typography>{props.title}</Typography>
+    <Accordion
+      style={{ border: 'none' }}
+      expanded={expanded}
+      onChange={handleChange(!expanded)}
+    >
+      <Grid container direction="row" justify="center" alignItems="center">
+        <AccordionSummary
+          aria-controls="panel1d-content"
+          id="panel1d-header"
+          style={{ backgroundColor: 'transparent', border: 'none' }}
+        >
+          <Button variant="contained" onClick={() => setIcon(!iconChange)}>
+            {iconChange ? <ExpandLessIcon /> : <ExpandMoreIcon />} Have a look
+            at out past events
+          </Button>
         </AccordionSummary>
-        <AccordionDetails>
-          <Grid container justify="center" alignItems="center">
-            {props.content}
-          </Grid>
-        </AccordionDetails>
-      </Accordion>
-    </div>
+      </Grid>
+      <AccordionDetails>
+        <Grid container justify="center" alignItems="center">
+          {props.content}
+        </Grid>
+      </AccordionDetails>
+    </Accordion>
   );
 }

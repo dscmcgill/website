@@ -17,83 +17,39 @@ import logo from '../static/images/dsc_logo.svg';
 import AdbIcon from '@material-ui/icons/Adb';
 import FastfoodIcon from '@material-ui/icons/Fastfood';
 
-const timeline = [
-  {
-    time: '2019.12.01',
-    image: logo,
-    icon: <FastfoodIcon />,
-    title: 'title1',
-    subheader: 'subheader1',
-    content: `ey, altKey, metaKey, ge
-  rState, button, butjqnwdkjnsacn
-  qwdjer a collection of`
-  },
-  {
-    time: '2019.12.02',
-    image: logo,
-    icon: <AdbIcon />,
-    title: 'title2',
-    subheader: 'subheader2',
-    content: `dqwjdqlwldmlkqmskcmls
-  qwdijqoiejdqkckljneiojdfojqoeljcf
-  qwoifdjoiqejfclqnejnlcfjqwndlj`
-  },
-  {
-    time: '2019.12.03',
-    image: logo,
-    icon: <AdbIcon color="secondary" />,
-    title: 'title3',
-    subheader: 'subheader3',
-    content: `qoifhjcioqejfoicnjqew
-  qwudhuqehfchqeoijhfdpiqjwpfijcqew
-  qeijfdoiqejlcffiocijfe`
-  }
-];
+import { timeline } from './../static/constants/Constants';
 
 function PastEvents() {
-  const mystyle = {
-    //put your style here
-  };
-
   return (
-    <div style={mystyle}>
-      <Timeline align="alternate">
-        {timeline.map((item, index) => (
-          <TimelineItem key={index}>
-            <TimelineOppositeContent>
-              <Typography variant="body2" color="textSecondary">
-                {item.time}
-              </Typography>
-            </TimelineOppositeContent>
-            <TimelineSeparator>
-              <TimelineDot>{item.icon}</TimelineDot>
-              <TimelineConnector />
-            </TimelineSeparator>
-            <TimelineContent>
-              <Box>
-                <CustomizedCard
-                  float={index % 2 === 0 ? 'left' : 'right'}
-                  title={item.title}
-                  subheader={item.subheader}
-                  content={item.content}
-                  image={item.image}
-                />
-              </Box>
-            </TimelineContent>
-          </TimelineItem>
-        ))}
-      </Timeline>
-    </div>
+    <Timeline align="alternate">
+      {timeline.map((item, index) => (
+        <TimelineItem key={index}>
+          <TimelineOppositeContent>
+            <Typography variant="body2" color="textSecondary">
+              {item.time}
+            </Typography>
+          </TimelineOppositeContent>
+          <TimelineSeparator>
+            <TimelineDot>{item.icon}</TimelineDot>
+            <TimelineConnector />
+          </TimelineSeparator>
+          <TimelineContent>
+            <Box>
+              <CustomizedCard
+                float={index % 2 === 0 ? 'left' : 'right'}
+                title={item.title}
+                subheader={item.subheader}
+                content={item.content}
+                image={item.image}
+              />
+            </Box>
+          </TimelineContent>
+        </TimelineItem>
+      ))}
+    </Timeline>
   );
 }
 function PastEventsPanel() {
-  const mystyle = {
-    //put your style here
-  };
-  return (
-    <div style={mystyle}>
-      <ExpandButton title="Past Events" content={PastEvents()} />
-    </div>
-  );
+  return <ExpandButton title="Past Events" content={PastEvents()} />;
 }
 export default PastEventsPanel;

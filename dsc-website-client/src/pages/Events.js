@@ -32,7 +32,7 @@ export default function Events() {
 
   const next_two_events = next_two_coming_events.map((event) => {
     return (
-      <Grid container item xs={12} spacing={3}>
+      <Grid container item xs={12} spacing={3} style={{ margin: '5px' }}>
         <Card className={classes.line}>
           <CardMedia
             className={classes.media}
@@ -71,7 +71,7 @@ export default function Events() {
           item
           xs={8}
           style={{
-            padding: '100px 20px 100px 100px'
+            padding: '20px 70px'
           }}
         >
           <Card className={classes.line}>
@@ -99,7 +99,7 @@ export default function Events() {
           container
           item
           xs={4}
-          style={{ padding: '100px', paddingLeft: '70px' }}
+          style={{ padding: '10px 100px ', paddingLeft: '70px' }}
         >
           <Grid
             container
