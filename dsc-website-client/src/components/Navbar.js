@@ -78,7 +78,13 @@ function Navbar() {
           >
             <Typography className={classes.buttonLeftTypo}>Team</Typography>
           </Button>
-          <Button size="large" className={classes.buttonLeftSide}>
+          <Button
+            size="large"
+            className={classes.buttonLeftSide}
+            onClick={() => {
+              goToDiv('joinus');
+            }}
+          >
             <Typography className={classes.buttonLeftTypo}>Join us!</Typography>
           </Button>
         </Grid>

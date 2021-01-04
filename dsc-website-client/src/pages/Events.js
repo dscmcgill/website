@@ -16,7 +16,7 @@ import {
 
 const useStyles = makeStyles({
   root: {
-    maxWidth: 345
+    paddingTop: '10%'
   },
   media: {
     width: '100%'
@@ -64,8 +64,7 @@ export default function Events() {
   });
 
   return (
-    <div>
-      <div id="events"></div>
+    <Grid id="events" className={classes.root}>
       <Typography
         gutterBottom
         variant="h2"
@@ -128,6 +127,6 @@ export default function Events() {
           </Grid>
         </Grid>
       </Grid>
-    </div>
+    </Grid>
   );
 }
