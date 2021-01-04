@@ -5,7 +5,7 @@ import MuiAccordionSummary from '@material-ui/core/AccordionSummary';
 import MuiAccordionDetails from '@material-ui/core/AccordionDetails';
 import Typography from '@material-ui/core/Typography';
 import Grid from '@material-ui/core/Grid';
-import { Button } from '@material-ui/core';
+import { Button, makeStyles } from '@material-ui/core';
 
 // Icons
 import IconButton from '@material-ui/core/IconButton';
@@ -25,9 +25,17 @@ const Accordion = withStyles({
     '&$expanded': {
       margin: 'auto'
     }
-  },
-  expanded: {}
+  }
 })(MuiAccordion);
+
+const useStyle = makeStyles(() => ({
+  position: {
+    background: '#4285F4',
+    color: 'white',
+    fontSize: '18px',
+    fontFamily: 'Product Sans'
+  }
+}));
 
 const AccordionSummary = withStyles({
   root: {
@@ -62,6 +70,8 @@ export default function CustomizedAccordions(props) {
     setExpanded(newExpanded ? panel : false);
   };
 
+  const classes = useStyle();
+
   return (
     <Accordion
       style={{ border: 'none' }}
@@ -74,9 +84,12 @@ export default function CustomizedAccordions(props) {
           id="panel1d-header"
           style={{ backgroundColor: 'transparent', border: 'none' }}
         >
-          <Button variant="contained" onClick={() => setIcon(!iconChange)}>
-            {iconChange ? <ExpandLessIcon /> : <ExpandMoreIcon />} Have a look
-            at out past events
+          <Button
+            className={classes.position}
+            variant="contained"
+            onClick={() => setIcon(!iconChange)}
+          >
+            {iconChange ? <ExpandLessIcon /> : <ExpandMoreIcon />} Past events
           </Button>
         </AccordionSummary>
       </Grid>

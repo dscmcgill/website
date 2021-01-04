@@ -1,24 +1,28 @@
 import React from 'react';
 import logo from '../images/dsc_logo.svg';
 
-import AdbIcon from '@material-ui/icons/Adb';
-import FastfoodIcon from '@material-ui/icons/Fastfood';
-import saba_fathi from './../images/saba_fathi.jpg';
-import pulasthi_peiris from './../images/pulasthi_peiris.JPG';
-import parsa_yadollahi from './../images/parsa_yadollahi.jpeg';
-import mohamed_beydoun from './../images/mohamed_beydoun.jpg';
-import julie_tian from './../images/julie_tian.jpg';
-import profile_picture from '../images/profile_picture.jpg';
+import saba_fathi from './../images/members/saba_fathi.jpg';
+import pulasthi_peiris from './../images/members/pulasthi_peiris.JPG';
+import parsa_yadollahi from './../images/members/parsa_yadollahi.jpeg';
+import mohamed_beydoun from './../images/members/mohamed_beydoun.jpg';
+import julie_tian from './../images/members/julie_tian.jpg';
+import profile_picture from '../images/members/profile_picture.jpg';
 
+// Upcoming Events
 import css_events from '../images/upcomingEvents/css_event.jpeg';
 import react_events from '../images/upcomingEvents/react_event.png';
 import tensor_flow_event from '../images/upcomingEvents/tensor_flow_event.png';
+
+// Past Events
+import ComputerIcon from '@material-ui/icons/Computer';
+import GroupIcon from '@material-ui/icons/Group';
+import TableChartIcon from '@material-ui/icons/TableChart';
 
 export const timeline = [
   {
     time: '2019.12.01',
     image: logo,
-    icon: <FastfoodIcon />,
+    icon: <ComputerIcon />,
     title: 'title1',
     subheader: 'subheader1',
     content: `ey, altKey, metaKey, ge
@@ -28,7 +32,7 @@ export const timeline = [
   {
     time: '2019.12.02',
     image: logo,
-    icon: <AdbIcon />,
+    icon: <GroupIcon />,
     title: 'title2',
     subheader: 'subheader2',
     content: `dqwjdqlwldmlkqmskcmls
@@ -38,7 +42,7 @@ export const timeline = [
   {
     time: '2019.12.03',
     image: logo,
-    icon: <AdbIcon color="secondary" />,
+    icon: <TableChartIcon />,
     title: 'title3',
     subheader: 'subheader3',
     content: `qoifhjcioqejfoicnjqew

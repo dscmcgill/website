@@ -19,7 +19,7 @@ const useStyles = makeStyles({
     paddingTop: '10%'
   },
   media: {
-    width: '100%'
+    width: '80%'
   },
   line: {
     border: 'None',
