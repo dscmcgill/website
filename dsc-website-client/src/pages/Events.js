@@ -24,6 +24,12 @@ const useStyles = makeStyles({
   line: {
     border: 'None',
     borderRadius: '0px'
+  },
+  title: {
+    color: '#686c70',
+    textAlign: 'center',
+    fontSize: '4rem',
+    fontFamily: 'Product Sans'
   }
 });
 
@@ -58,7 +64,17 @@ export default function Events() {
   });
 
   return (
-    <div id="events">
+    <div>
+      <div id="events"></div>
+      <Typography
+        gutterBottom
+        variant="h2"
+        component="h2"
+        className={classes.title}
+      >
+        Upcoming Events
+      </Typography>
+
       <Grid
         spacing={1}
         container

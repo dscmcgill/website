@@ -2,7 +2,7 @@ import React, { useEffect, useState } from 'react';
 import { Link } from 'react-router-dom';
 
 // Images
-import dsc_logo from './../static/images/dsc_logo.svg'
+import dsc_logo from './../static/images/dsc_logo.svg';
 
 // MUI
 import AppBar from '@material-ui/core/AppBar';
@@ -64,19 +64,19 @@ function Navbar() {
             size="large"
             className={classes.buttonLeftSide}
             onClick={() => {
-              goToDiv('team');
+              goToDiv('events');
             }}
           >
-            <Typography className={classes.buttonLeftTypo}>Team</Typography>
+            <Typography className={classes.buttonLeftTypo}>Events</Typography>
           </Button>
           <Button
             size="large"
             className={classes.buttonLeftSide}
             onClick={() => {
-              goToDiv('events');
+              goToDiv('team');
             }}
           >
-            <Typography className={classes.buttonLeftTypo}>Events</Typography>
+            <Typography className={classes.buttonLeftTypo}>Team</Typography>
           </Button>
           <Button size="large" className={classes.buttonLeftSide}>
             <Typography className={classes.buttonLeftTypo}>Join us!</Typography>
