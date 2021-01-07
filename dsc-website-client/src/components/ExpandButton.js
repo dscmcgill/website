@@ -3,12 +3,10 @@ import { withStyles } from '@material-ui/core/styles';
 import MuiAccordion from '@material-ui/core/Accordion';
 import MuiAccordionSummary from '@material-ui/core/AccordionSummary';
 import MuiAccordionDetails from '@material-ui/core/AccordionDetails';
-import Typography from '@material-ui/core/Typography';
 import Grid from '@material-ui/core/Grid';
 import { Button, makeStyles } from '@material-ui/core';
 
 // Icons
-import IconButton from '@material-ui/core/IconButton';
 import ExpandMoreIcon from '@material-ui/icons/ExpandMore';
 import ExpandLessIcon from '@material-ui/icons/ExpandLess';
 
@@ -33,7 +31,8 @@ const useStyle = makeStyles(() => ({
     background: '#4285F4',
     color: 'white',
     fontSize: '18px',
-    fontFamily: 'Product Sans'
+    fontFamily: 'Product Sans',
+    margin: 0
   }
 }));
 
@@ -82,7 +81,13 @@ export default function CustomizedAccordions(props) {
         <AccordionSummary
           aria-controls="panel1d-content"
           id="panel1d-header"
-          style={{ backgroundColor: 'transparent', border: 'none' }}
+          style={{
+            backgroundColor: 'transparent',
+            border: 'none',
+            padding: 0,
+            height: 0,
+            margin: 0
+          }}
         >
           <Button
             className={classes.position}

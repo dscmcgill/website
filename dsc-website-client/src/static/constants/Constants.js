@@ -7,6 +7,15 @@ import parsa_yadollahi from './../images/members/parsa_yadollahi.jpeg';
 import mohamed_beydoun from './../images/members/mohamed_beydoun.jpg';
 import julie_tian from './../images/members/julie_tian.jpg';
 import profile_picture from '../images/members/profile_picture.jpg';
+import maneth from './../images/members/Maneth.jpg';
+import james_ting from './../images/members/james_ting.jpeg';
+import simon_berens from './../images/members/simon_berens.jpg';
+import jenna_latiok from './../images/members/jenna_latiok.jpg';
+import changjun_zhou from './../images/members/changjun_zhou.jpg';
+import ridwan_kumarlly from './../images/members/ridwan_kumarlly.jpg';
+import michael_li from './../images/members/michael_li.jpg';
+import cole_killian from './../images/members/cole_killian.png';
+import massy_mahamli from './../images/members/massy_mahamli.JPG';
 
 // Upcoming Events
 import css_events from '../images/upcomingEvents/css_event.jpeg';
@@ -55,8 +64,11 @@ export const teams_leads = [
   {
     name: 'Maneth Kalatunge',
     position: 'DSC Lead',
-    description: 'Basic Youtuber, Aspiring Podcaster',
-    picture: profile_picture
+    description: `Maneth is a U3 Computer Science Student
+      interested in software development and content
+       creation. He talks about college related
+        topics in his youtube channel and podcast.`,
+    picture: maneth
   },
   {
     name: 'Parsa Yadollahi',
@@ -79,7 +91,7 @@ export const teams_leads = [
     position: 'Communications Lead',
     description: `Fourth year comp and neuroscience student.
     Low key music critic and meme enthusiast.`,
-    picture: profile_picture
+    picture: jenna_latiok
   },
   {
     name: 'Simon Berens',
@@ -88,15 +100,7 @@ export const teams_leads = [
     distributed systems and competitive programming.
     He spends his time reading, playing ping pong,
     and typing on his dactyl manuform`,
-    picture: profile_picture
-  },
-  {
-    name: 'Cole Killian',
-    position: 'Back-End Developer',
-    description: `Fellow Math and Comp Sci Student.
-    Enjoys hiking, guitar, building full stack apps, and competitive programming.
-    Aspiring blogger, ask me about org mode :).`,
-    picture: profile_picture
+    picture: simon_berens
   }
 ];
 
@@ -129,32 +133,40 @@ export const team_members = [
     name: 'Michael Li',
     position: 'Back-End Developer',
     description: `U3 SWE student, enjoy watching and playing fútbol, hala madrid ⚽`,
-    picture: profile_picture
+    picture: michael_li
+  },
+  {
+    name: 'Cole Killian',
+    position: 'Back-End Developer',
+    description: `Fellow Math and Comp Sci Student.
+    Enjoys hiking, guitar, building full stack apps, and competitive programming.
+    Aspiring blogger, ask me about org mode :).`,
+    picture: cole_killian
   },
   {
     name: 'Changjun Zhou',
     position: 'Front-End Developer',
     description: `U2 SWE student, a secret guy who is trying to find how to use docker.`,
-    picture: profile_picture
+    picture: changjun_zhou
   },
   {
     name: 'Massy Mahamli',
     position: 'Design Lead & Frontend Developer',
     description: `U3 Software engineering student , love creative tech and filmmaking`,
-    picture: profile_picture
+    picture: massy_mahamli
   },
   {
     name: 'James Ting',
     position: 'Back-End Developer',
     description: `U3 Computer Science student from Vancouver,
     who enjoys solving problems, coding programs and flying planes`,
-    picture: profile_picture
+    picture: james_ting
   },
   {
     name: 'Ridwan Kurmally',
     position: 'Back-End Developer',
     description: `U3 Honours CS student, love gaming, football and programming challenges`,
-    picture: profile_picture
+    picture: ridwan_kumarlly
   },
   {
     name: 'Kareem Sayed',
