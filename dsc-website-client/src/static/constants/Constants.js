@@ -16,6 +16,7 @@ import ridwan_kumarlly from './../images/members/ridwan_kumarlly.jpg';
 import michael_li from './../images/members/michael_li.jpg';
 import cole_killian from './../images/members/cole_killian.png';
 import massy_mahamli from './../images/members/massy_mahamli.JPG';
+import kareem_sayed from './../images/members/kareem_sayed.jpg';
 
 // Upcoming Events
 import css_events from '../images/upcomingEvents/css_event.jpeg';
@@ -174,7 +175,7 @@ export const team_members = [
     description: `U3 Finance and CS student from Vancouver and Cairo,
     fascinated with Fintech, algorithmic trading,
     as well as building the future of the financial and technical world`,
-    picture: profile_picture
+    picture: kareem_sayed
   }
 ];
 
