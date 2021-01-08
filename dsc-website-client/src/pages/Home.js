@@ -48,10 +48,10 @@ function Home() {
         style={{ height: '100vh' }}
         container
         direction="row"
-        justify="center"
+        justify="flex-end"
         alignItems="center"
       >
-        <Grid item xs={8} style={{ padding: '50px' }}>
+        <Grid item xs={6} style={{ padding: '50px' }}>
           <Grid
             container
             direction="column"

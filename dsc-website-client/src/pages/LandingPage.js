@@ -7,6 +7,7 @@ import Team from './Team';
 import PastEvents from './PastEvents';
 import NavBar from './../components/Navbar';
 import Footer from './../components/Footer';
+import { makeStyles } from '@material-ui/core';
 
 export default function LandingPage() {
   return (

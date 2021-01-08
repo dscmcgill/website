@@ -23,7 +23,8 @@ const useStyles = makeStyles({
   },
   line: {
     border: 'None',
-    borderRadius: '0px'
+    borderRadius: '0px',
+    boxShadow: 'none'
   },
   title: {
     color: '#686c70',
@@ -82,9 +83,8 @@ export default function Events() {
         alignItems="flex-start"
       >
         <Grid
-          container
           item
-          xs={8}
+          xs={6}
           style={{
             padding: '20px 70px'
           }}
@@ -111,9 +111,8 @@ export default function Events() {
           </Card>
         </Grid>
         <Grid
-          container
           item
-          xs={4}
+          xs={3}
           style={{ padding: '10px 100px ', paddingLeft: '70px' }}
         >
           <Grid
