@@ -6,7 +6,6 @@ import pulasthi_peiris from './../images/members/pulasthi_peiris.JPG';
 import parsa_yadollahi from './../images/members/parsa_yadollahi.jpeg';
 import mohamed_beydoun from './../images/members/mohamed_beydoun.jpg';
 import julie_tian from './../images/members/julie_tian.jpg';
-import profile_picture from '../images/members/profile_picture.jpg';
 import maneth from './../images/members/Maneth.jpg';
 import james_ting from './../images/members/james_ting.jpeg';
 import simon_berens from './../images/members/simon_berens.jpg';
