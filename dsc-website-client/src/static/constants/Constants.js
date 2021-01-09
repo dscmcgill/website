@@ -55,11 +55,11 @@ export const pastEvents = [
     icon: <ComputerIcon />,
     title: 'Info Session - Virtual',
     subheader: 'Info Session - McGill University ',
-    content: `Welcome to the Developer Student Club 
+    content: `Welcome to the Developer Student Club
               at McGill University! Join us for our kickoff info session!
-              Come learn all about the Developer 
-              Student Club! We'll be going over what DSC 
-              at McGill is all about and what our plans are for the year! 
+              Come learn all about the Developer
+              Student Club! We'll be going over what DSC
+              at McGill is all about and what our plans are for the year!
               Come meet the team and other members of DSC! Everyone is welcome!`
   },
   {
@@ -68,9 +68,9 @@ export const pastEvents = [
     icon: <GroupWork />,
     title: 'Hands-On Workshop - Virtual',
     subheader: 'Google Cloud Study Jam - Google Cloud Essentials',
-    content: `Join a community of like-minded developers and explore 
+    content: `Join a community of like-minded developers and explore
               the latest Google Cloud technologies as a team.
-              Join us for our upcoming Cloud Study Jam and get 
+              Join us for our upcoming Cloud Study Jam and get
               hands-on experience with Google Cloud Platform.`
   },
   {
@@ -79,9 +79,9 @@ export const pastEvents = [
     icon: <Chat />,
     title: 'Speaker Session / Tech Talk - Virtual',
     subheader: 'Fireside Chat with Dr. John Hennessy - Chairman Alphabet Inc.',
-    content: `Join us for a one-hour session with Alphabet Chairman John Hennessy 
-              on October 14th, 2020 at 7:00 PM EST. We’ll discuss his journey from technology 
-              entrepreneur to Stanford President, as well as his leadership of Google. Dr. Hennessy 
+    content: `Join us for a one-hour session with Alphabet Chairman John Hennessy
+              on October 14th, 2020 at 7:00 PM EST. We’ll discuss his journey from technology
+              entrepreneur to Stanford President, as well as his leadership of Google. Dr. Hennessy
               is also an alumnus of Villanova University and will share his experience as a student
               and advise current students.`
   },
@@ -91,10 +91,9 @@ export const pastEvents = [
     icon: <TableChartIcon />,
     title: 'Speaker Session / Taech Talk - Virtual',
     subheader: 'Peer-to-Peer Internship Panel',
-    content: `Come join us for our intern panel on October 15th! 
-              At this event, you will hear about internship and work experiences,
+    content: `At this event, we heard about internship and work experiences,
               accomplishments, and advice for students breaking into the tech industry.
-              Our panellists include previous interns from many different large tech 
+              Our panellists included previous interns from many different large tech
               companies including, Amazon, IBM, Microsoft, Facebook, and more!`
   },
   {
@@ -103,9 +102,9 @@ export const pastEvents = [
     icon: <MenuBook />,
     title: 'Hands-On Workshop - Virtual',
     subheader: 'Intro to Kubernetes',
-    content: `Our speaker, Omkar Joshi, is a Certified Kubernetes Application Developer, 
+    content: `Our speaker, Omkar Joshi, is a Certified Kubernetes Application Developer,
               currently working as an Online Programmer at Ubisoft Montreal, with more than 5 years
-              of software product R&D experience in building RESTful web services on distributed 
+              of software product R&D experience in building RESTful web services on distributed
               cloud based systems and cloud native applications`
   }
 ];
