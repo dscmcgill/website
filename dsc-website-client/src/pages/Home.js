@@ -45,13 +45,13 @@ function Home() {
   return (
     <div id="home">
       <Grid
-        style={{ height: '100vh' }}
+        style={{ minHeight: '100vh', height: '100vh' }}
         container
         direction="row"
         justify="flex-end"
         alignItems="center"
       >
-        <Grid item xs={6} style={{ padding: '50px' }}>
+        <Grid item sm={5} xs={12} style={{ padding: '30px' }}>
           <Grid
             container
             direction="column"
@@ -83,7 +83,7 @@ function Home() {
             justify="center"
             alignItems="flex-start"
           >
-            <Grid xs={4}>
+            <Grid sm={4} xs={12}>
               <div style={{ margin: '5px' }}>
                 <Fab
                   disabled
@@ -101,7 +101,7 @@ function Home() {
                 </Typography>
               </div>
             </Grid>
-            <Grid xs={4}>
+            <Grid sm={4} xs={12}>
               <div style={{ margin: '5px' }}>
                 <Fab
                   disabled
@@ -119,7 +119,7 @@ function Home() {
                 </Typography>
               </div>
             </Grid>
-            <Grid xs={4}>
+            <Grid sm={4} xs={12}>
               <div style={{ margin: '5px' }}>
                 <Fab
                   disabled
@@ -142,9 +142,10 @@ function Home() {
         </Grid>
         <Grid
           item
-          xs={4}
+          sm={4}
+          xs={12}
           className="landingPage"
-          style={{ height: '100%' }}
+          style={{ minHeight: '100vh' }}
         ></Grid>
       </Grid>
     </div>

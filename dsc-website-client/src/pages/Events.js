@@ -56,7 +56,7 @@ export default function Events() {
 
   const next_two_events = next_two_coming_events.map((event) => {
     return (
-      <Grid container item xs={12} spacing={3} style={{ margin: '5px' }}>
+      <Grid container item xs={12} spacing={3} style={{ margin: '0px' }}>
         <Card className={classes.card}>
           <CardMedia src={event.image} component="img" title="react Event" />
           <CardContent>
@@ -90,19 +90,14 @@ export default function Events() {
       </Typography>
 
       <Grid
-        spacing={1}
+        spacing={2}
+        xs={12}
         container
         direction="row"
         justify="center"
         alignItems="flex-start"
       >
-        <Grid
-          item
-          xs={6}
-          style={{
-            padding: '20px 70px'
-          }}
-        >
+        <Grid item sm={4} xs={12}>
           <Card className={classes.card}>
             <CardMedia
               className={classes.media}
@@ -124,11 +119,7 @@ export default function Events() {
             </CardContent>
           </Card>
         </Grid>
-        <Grid
-          item
-          xs={3}
-          style={{ padding: '10px 100px ', paddingLeft: '70px' }}
-        >
+        <Grid item sm={2} xs={12}>
           <Grid
             container
             direction="column"
