@@ -17,6 +17,15 @@ import cole_killian from './../images/members/cole_killian.png';
 import massy_mahamli from './../images/members/massy_mahamli.JPG';
 import kareem_sayed from './../images/members/kareem_sayed.jpg';
 
+// Past events images
+import event1 from './../images/pastEvents/event1_tech_talk.png';
+import event2 from './../images/pastEvents/event2_Info_Session.jpg';
+import event3 from './../images/pastEvents/event3_cloud_study.jpeg';
+import event4 from './../images/pastEvents/event4_tech_talk.jpeg';
+import event5 from './../images/pastEvents/event5_tech_talk.png';
+import event6 from './../images/pastEvents/event6_tech_talk.png';
+import event7 from './../images/pastEvents/event7_kubernetes.png';
+
 // Upcoming Events
 import css_events from '../images/upcomingEvents/css_event.jpeg';
 import react_events from '../images/upcomingEvents/react_event.png';
@@ -26,13 +35,13 @@ import tensor_flow_event from '../images/upcomingEvents/tensor_flow_event.png';
 import ComputerIcon from '@material-ui/icons/Computer';
 import GroupIcon from '@material-ui/icons/Group';
 import TableChartIcon from '@material-ui/icons/TableChart';
-
-// Past events images
-import event1 from './../images/pastEvents/event1_tech_talk.png';
+import Chat from '@material-ui/icons/Chat';
+import GroupWork from '@material-ui/icons/GroupWork';
+import MenuBook from '@material-ui/icons/MenuBook';
 
 export const pastEvents = [
   {
-    time: 'Sept 10, 2020',
+    time: 'SEP 10, 2020',
     image: event1,
     icon: <GroupIcon />,
     title: 'Speaker Session / Tech Talk',
@@ -41,24 +50,63 @@ export const pastEvents = [
     Mehmet Sever guided us through this workshop, he is the current Google DSC Lead and LinkedIn Learning Student Ambassador.`
   },
   {
-    time: '2019.12.02',
-    image: logo,
+    time: 'SEP 30, 2020',
+    image: event2,
     icon: <ComputerIcon />,
-    title: 'title2',
-    subheader: 'subheader2',
-    content: `dqwjdqlwldmlkqmskcmls
-  qwdijqoiejdqkckljneiojdfojqoeljcf
-  qwoifdjoiqejfclqnejnlcfjqwndlj`
+    title: 'Info Session - Virtual',
+    subheader: 'Info Session - McGill University ',
+    content: `Welcome to the Developer Student Club 
+              at McGill University! Join us for our kickoff info session!
+              Come learn all about the Developer 
+              Student Club! We'll be going over what DSC 
+              at McGill is all about and what our plans are for the year! 
+              Come meet the team and other members of DSC! Everyone is welcome!`
   },
   {
-    time: '2019.12.03',
-    image: logo,
+    time: 'OCT 10, 2020',
+    image: event3,
+    icon: <GroupWork />,
+    title: 'Hands-On Workshop - Virtual',
+    subheader: 'Google Cloud Study Jam - Google Cloud Essentials',
+    content: `Join a community of like-minded developers and explore 
+              the latest Google Cloud technologies as a team.
+              Join us for our upcoming Cloud Study Jam and get 
+              hands-on experience with Google Cloud Platform.`
+  },
+  {
+    time: 'OCT 14, 2020',
+    image: event4,
+    icon: <Chat />,
+    title: 'Speaker Session / Tech Talk - Virtual',
+    subheader: 'Fireside Chat with Dr. John Hennessy - Chairman Alphabet Inc.',
+    content: `Join us for a one-hour session with Alphabet Chairman John Hennessy 
+              on October 14th, 2020 at 7:00 PM EST. We’ll discuss his journey from technology 
+              entrepreneur to Stanford President, as well as his leadership of Google. Dr. Hennessy 
+              is also an alumnus of Villanova University and will share his experience as a student
+              and advise current students.`
+  },
+  {
+    time: 'OCT 15, 2020',
+    image: event5,
     icon: <TableChartIcon />,
-    title: 'title3',
-    subheader: 'subheader3',
-    content: `qoifhjcioqejfoicnjqew
-  qwudhuqehfchqeoijhfdpiqjwpfijcqew
-  qeijfdoiqejlcffiocijfe`
+    title: 'Speaker Session / Taech Talk - Virtual',
+    subheader: 'Peer-to-Peer Internship Panel',
+    content: `Come join us for our intern panel on October 15th! 
+              At this event, you will hear about internship and work experiences,
+              accomplishments, and advice for students breaking into the tech industry.
+              Our panellists include previous interns from many different large tech 
+              companies including, Amazon, IBM, Microsoft, Facebook, and more!`
+  },
+  {
+    time: 'NOV 18, 2020',
+    image: event7,
+    icon: <MenuBook />,
+    title: 'Hands-On Workshop - Virtual',
+    subheader: 'Intro to Kubernetes',
+    content: `Our speaker, Omkar Joshi, is a Certified Kubernetes Application Developer, 
+              currently working as an Online Programmer at Ubisoft Montreal, with more than 5 years
+              of software product R&D experience in building RESTful web services on distributed 
+              cloud based systems and cloud native applications`
   }
 ];
 
