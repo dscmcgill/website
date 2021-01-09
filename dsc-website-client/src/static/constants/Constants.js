@@ -22,26 +22,28 @@ import css_events from '../images/upcomingEvents/css_event.jpeg';
 import react_events from '../images/upcomingEvents/react_event.png';
 import tensor_flow_event from '../images/upcomingEvents/tensor_flow_event.png';
 
-// Past Events
+// Past Events Icons
 import ComputerIcon from '@material-ui/icons/Computer';
 import GroupIcon from '@material-ui/icons/Group';
 import TableChartIcon from '@material-ui/icons/TableChart';
 
-export const timeline = [
+// Past events images
+import event1 from './../images/pastEvents/event1_tech_talk.png';
+
+export const pastEvents = [
   {
-    time: '2019.12.01',
-    image: logo,
-    icon: <ComputerIcon />,
-    title: 'title1',
-    subheader: 'subheader1',
-    content: `ey, altKey, metaKey, ge
-  rState, button, butjqnwdkjnsacn
-  qwdjer a collection of`
+    time: 'Sept 10, 2020',
+    image: event1,
+    icon: <GroupIcon />,
+    title: 'Speaker Session / Tech Talk',
+    subheader: 'Get Noticed & Launch Your Career with LinkedIn',
+    content: `In this session, we learned how to use LinkedIn to boost your connections and your profile outreach. We also talked about how to use LinkedIn Learning.
+    Mehmet Sever guided us through this workshop, he is the current Google DSC Lead and LinkedIn Learning Student Ambassador.`
   },
   {
     time: '2019.12.02',
     image: logo,
-    icon: <GroupIcon />,
+    icon: <ComputerIcon />,
     title: 'title2',
     subheader: 'subheader2',
     content: `dqwjdqlwldmlkqmskcmls

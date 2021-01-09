@@ -11,13 +11,13 @@ import { makeStyles } from '@material-ui/core';
 
 export default function LandingPage() {
   return (
-    <div>
+    <>
       <NavBar />
       <Home />
       <Events />
       <PastEvents />
       <Team />
       <Footer />
-    </div>
+    </>
   );
 }

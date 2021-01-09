@@ -26,13 +26,16 @@ const Accordion = withStyles({
   }
 })(MuiAccordion);
 
-const useStyle = makeStyles(() => ({
-  position: {
-    background: '#4285F4',
-    color: 'white',
-    fontSize: '18px',
-    fontFamily: 'Product Sans',
-    margin: 0
+const useStyle = makeStyles((theme) => ({
+  button: {
+    textTransform: 'none',
+    backgroundColor: theme.textColors.blue,
+    fontSize: theme.fontSize.twelve,
+    color: theme.textColors.white,
+    boxShadow: 'none',
+    '&:hover': {
+      backgroundColor: theme.textColors.blue
+    }
   }
 }));
 
@@ -61,18 +64,16 @@ const AccordionDetails = withStyles((theme) => ({
 
 export default function CustomizedAccordions(props) {
   const [expanded, setExpanded] = React.useState(false);
-  // const [arrowButton, setArrowButton] = React.useState(<ExpandMoreIcon />);
   const [iconChange, setIcon] = React.useState(false);
+  const classes = useStyle();
 
   const handleChange = (panel) => (newExpanded) => {
     setExpanded(newExpanded ? panel : false);
   };
 
-  const classes = useStyle();
-
   return (
     <Accordion
-      style={{ border: 'none' }}
+      style={{ border: 'none', backgroundColor: '#f1f3f4', margin: 0 }}
       expanded={expanded}
       onChange={handleChange(!expanded)}
     >
@@ -85,15 +86,16 @@ export default function CustomizedAccordions(props) {
             border: 'none',
             padding: 0,
             height: 0,
-            margin: 0
+            margin: 20
           }}
         >
           <Button
-            className={classes.position}
+            className={classes.button}
             variant="contained"
             onClick={() => setIcon(!iconChange)}
           >
-            {iconChange ? <ExpandLessIcon /> : <ExpandMoreIcon />} Past events
+            {iconChange ? <ExpandLessIcon /> : <ExpandMoreIcon />}
+            See our past events
           </Button>
         </AccordionSummary>
       </Grid>

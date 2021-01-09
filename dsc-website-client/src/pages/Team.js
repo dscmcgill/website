@@ -10,9 +10,9 @@ import { team_members, teams_leads } from './../static/constants/Constants';
 
 const useStyles = makeStyles((theme) => ({
   fab: {
-    backgroundColor: '#5584eb',
+    backgroundColor: theme.textColors.blue,
     '&$disabled': {
-      backgroundColor: '#5584eb'
+      backgroundColor: theme.textColors.blue
     }
   },
   card: {
@@ -20,74 +20,50 @@ const useStyles = makeStyles((theme) => ({
     margin: '15px'
   },
   title: {
-    color: '#686c70',
-    textAlign: 'center',
-    fontSize: '4rem',
-    fontFamily: 'Product Sans'
+    color: theme.textColors.grey,
+    textAlign: 'center'
   },
-
   lead: {
-    color: '#DB4437',
-    fontSize: '2.5rem',
-    fontWeight: 'bold',
-    fontFamily: 'Product Sans',
-    background: 'rgba(255,255,255,0.5)',
-    width: 'auto',
-    borderRadius: '50px'
+    color: theme.textColors.red
   },
 
   not_lead: {
-    color: '#F4B400',
-    fontSize: '2.5rem',
-    fontWeight: 'bold',
-    fontFamily: 'Product Sans',
-    background: 'rgba(255,255,255,0.5)',
-    width: 'auto',
-    borderRadius: '50px'
+    color: theme.textColors.yellow
   },
 
   description: {
-    fontSize: '18px',
-    color: 'white',
+    fontSize: theme.fontSize.sixteen,
+    color: theme.textColors.white,
     padding: '10px',
     borderRadius: '5px',
-    textAlign: 'justify',
-    alignItems: 'left',
-    maxWidth: '',
-    background: 'rgb(126, 127, 127)',
-    fontFamily: 'Product Sans'
+    background: theme.textColors.grey
   },
 
   name: {
     background: '#4285F4',
     borderRadius: '5px 5px 0 0',
-    color: 'white',
-    fontSize: '1.3rem',
-    fontWeight: 'bold',
-    fontFamily: 'Product Sans',
+    color: theme.textColors.white,
+    fontSize: theme.fontSize.sixteen,
     padding: '5px 0 5px 5px'
   },
 
   position: {
-    background: '#4285F4',
+    background: theme.textColors.blue,
     borderRadius: '0 0 5px 5px',
-    color: 'white',
-    fontSize: '1.2rem',
-    fontFamily: 'Product Sans',
+    color: theme.textColors.white,
+    fontSize: theme.fontSize.sixteen,
     padding: '0 5px 5px 5px'
   },
 
   subTitles: {
-    color: '#686c70',
+    color: theme.textColors.grey,
     textAlign: 'left',
     padding: '15px 0px'
   },
-
   individual: {
     borderRadius: '10px',
     margin: '0 0px 5px 0'
   },
-
   profile_pic: {
     width: 'auto',
     height: '175px',
@@ -181,22 +157,28 @@ function Team() {
       alignItems="center"
       id="team"
     >
-      <Grid container spacing={2} style={{ margin: '10%' }} alignItems="center">
+      <Grid container spacing={2} style={{ margin: '5%' }} alignItems="center">
         <Grid container xs={12}>
           <Grid item xs={12}>
-            <Typography className={classes.title}>Meet the team</Typography>
+            <Typography variant="h2" component="h1" className={classes.title}>
+              Meet the team
+            </Typography>
           </Grid>
         </Grid>
 
         <Grid container item xs={12} spacing={3} className="team">
           <Grid container justify="center" xs={12}>
-            <Typography className={classes.lead}>Leads</Typography>
+            <Typography variant="h4" component="p" className={classes.lead}>
+              Leads
+            </Typography>
           </Grid>
 
           {leads}
 
           <Grid item container justify="center" xs={12}>
-            <Typography className={classes.not_lead}>Developers</Typography>
+            <Typography variant="h4" component="p" className={classes.not_lead}>
+              Developers
+            </Typography>
           </Grid>
 
           {developers}

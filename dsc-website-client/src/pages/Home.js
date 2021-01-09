@@ -19,9 +19,9 @@ import Fab from '@material-ui/core/Fab';
 
 const useStyles = makeStyles((theme) => ({
   fab: {
-    backgroundColor: '#5584eb',
+    backgroundColor: theme.textColors.blue,
     '&$disabled': {
-      backgroundColor: '#5584eb'
+      backgroundColor: theme.textColors.blue
     }
   },
   disabled: {},
@@ -30,11 +30,11 @@ const useStyles = makeStyles((theme) => ({
     margin: '15px'
   },
   title: {
-    color: '#686c70',
+    color: theme.textColors.grey,
     textAlign: 'center'
   },
   subTitles: {
-    color: '#686c70',
+    color: theme.textColors.grey,
     textAlign: 'left',
     padding: '15px 0px'
   }

@@ -12,42 +12,42 @@ import InstagramIcon from '@material-ui/icons/Instagram';
 import LinkedInIcon from '@material-ui/icons/LinkedIn';
 import IconButton from '@material-ui/core/IconButton';
 
-const useStyles = makeStyles({
+const useStyles = makeStyles((theme) => ({
   container: {
-    marginBottom: '35px'
+    padding: '35px 0px',
+    backgroundColor: theme.palette.primary.dark
   },
   icons: {
     '& svg': {
       fontSize: '35px'
+    },
+    '&:hover': {
+      color: theme.textColors.blue,
+      boxShadow: 'none'
     }
   },
   bottomText: {
-    color: '#686c70',
+    color: theme.textColors.grey,
     textAlign: 'center',
-    fontSize: '18px',
-    fontFamily: 'Product Sans'
+    fontSize: theme.fontSize.sixteen
   }
-});
+}));
 
 function Footer() {
+  const emailUrl = 'mailto:mcgilldsc@gmail.com';
+  const facebookUrl = 'https://www.facebook.com/dscmcgill';
+  const instaUrl = 'https://www.instagram.com/dscmcgill/';
+  const linkedInUrl = 'https://www.linkedin.com/company/developerstudentclubs/';
   const classes = useStyles();
+
   const handleClick = (url) => {
-    // do something meaningful, Promises, if/else, whatever, and then
     window.open(url, '_blank');
   };
   const icons = [
-    <EmailIcon onClick={() => handleClick('mailto:mcgilldsc@gmail.com')} />,
-    <FacebookIcon
-      onClick={() => handleClick('https://www.facebook.com/dscmcgill')}
-    />,
-    <InstagramIcon
-      onClick={() => handleClick('https://www.instagram.com/dscmcgill/')}
-    />,
-    <LinkedInIcon
-      onClick={() =>
-        handleClick('https://www.linkedin.com/company/developerstudentclubs/')
-      }
-    />
+    <EmailIcon onClick={() => handleClick(emailUrl)} />,
+    <FacebookIcon onClick={() => handleClick(facebookUrl)} />,
+    <InstagramIcon onClick={() => handleClick(instaUrl)} />,
+    <LinkedInIcon onClick={() => handleClick(linkedInUrl)} />
   ];
 
   const display_icons = icons.map((icon) => {
@@ -63,7 +63,11 @@ function Footer() {
       <Grid container direction="row" justify="center" alignItems="center">
         {display_icons}
       </Grid>
-      <Typography className={classes.bottomText}>
+      <Typography
+        variant="subtitle1"
+        component="p"
+        className={classes.bottomText}
+      >
         © Developer Student Clubs McGill University 2021
       </Typography>
       <br />

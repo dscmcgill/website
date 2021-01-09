@@ -5,25 +5,29 @@ import TimelineSeparator from '@material-ui/lab/TimelineSeparator';
 import TimelineConnector from '@material-ui/lab/TimelineConnector';
 import TimelineContent from '@material-ui/lab/TimelineContent';
 import TimelineOppositeContent from '@material-ui/lab/TimelineOppositeContent';
-import TimelineDot from '@material-ui/lab/TimelineDot';
 import Typography from '@material-ui/core/Typography';
 import Box from '@material-ui/core/Box';
 
 import CustomizedCard from '../components/CustomizedCard';
 import ExpandButton from '../components/ExpandButton';
 
-import { timeline } from './../static/constants/Constants';
-import { Icon } from '@material-ui/core';
+import { pastEvents } from './../static/constants/Constants';
+import { makeStyles } from '@material-ui/core';
+
+const useStyles = makeStyles((theme) => ({
+  root: {
+    backgroundColor: theme.palette.primary.dark
+  }
+}));
 
 function PastEvents() {
+  const classes = useStyles();
   return (
-    <Timeline align="alternate">
-      {timeline.map((item, index) => (
+    <Timeline align="alternate" className={classes.root}>
+      {pastEvents.map((item, index) => (
         <TimelineItem key={index}>
           <TimelineOppositeContent>
-            <Typography variant="body2" color="textSecondary">
-              {item.time}
-            </Typography>
+            <Typography variant="body2">{item.time}</Typography>
           </TimelineOppositeContent>
           <TimelineSeparator>
             {item.icon}

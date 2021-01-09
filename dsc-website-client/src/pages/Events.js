@@ -14,25 +14,42 @@ import {
   next_two_coming_events
 } from './../static/constants/Constants';
 
-const useStyles = makeStyles({
+const useStyles = makeStyles((theme) => ({
   root: {
-    paddingTop: '10%'
+    paddingTop: '5%',
+    backgroundColor: theme.palette.primary.dark
   },
-  media: {
-    width: '80%'
-  },
-  line: {
+  card: {
     border: 'None',
-    borderRadius: '0px',
-    boxShadow: 'none'
+    borderRadius: '5px'
   },
   title: {
-    color: '#686c70',
-    textAlign: 'center',
-    fontSize: '4rem',
-    fontFamily: 'Product Sans'
+    color: theme.textColors.grey,
+    textAlign: 'center'
+  },
+  buttonRight: {
+    textTransform: 'none',
+    backgroundColor: theme.textColors.blue,
+    fontSize: theme.fontSize.twelve,
+    color: theme.textColors.white,
+    boxShadow: 'none',
+    '&:hover': {
+      backgroundColor: theme.textColors.blue
+    }
+  },
+  buttonLeft: {
+    textTransform: 'none',
+    backgroundColor: theme.textColors.white,
+    fontSize: theme.fontSize.twelve,
+    color: theme.textColors.blue,
+    boxShadow: 'none',
+    border: '1px solid #dadce0',
+    '&:hover': {
+      backgroundColor: '#e8f0fe',
+      boxShadow: 'none'
+    }
   }
-});
+}));
 
 export default function Events() {
   const classes = useStyles();
@@ -40,24 +57,21 @@ export default function Events() {
   const next_two_events = next_two_coming_events.map((event) => {
     return (
       <Grid container item xs={12} spacing={3} style={{ margin: '5px' }}>
-        <Card className={classes.line}>
-          <CardMedia
-            className={classes.media}
-            src={event.image}
-            component="img"
-            title="react Event"
-          />
+        <Card className={classes.card}>
+          <CardMedia src={event.image} component="img" title="react Event" />
           <CardContent>
-            <Typography gutterBottom variant="h5" component="h2">
+            <Typography gutterBottom component="h2">
               {event.date}
             </Typography>
-            <Typography gutterBottom variant="h3" component="h2">
+            <Typography gutterBottom variant="h5" component="h1">
               {event.title}
             </Typography>
             <Typography variant="body2" color="textSecondary" component="p">
               {event.descriprion}
             </Typography>
-            <Button variant="contained">Sign up</Button>
+            <Button variant="contained" className={classes.buttonLeft}>
+              Sign up
+            </Button>
           </CardContent>
         </Card>
       </Grid>
@@ -69,7 +83,7 @@ export default function Events() {
       <Typography
         gutterBottom
         variant="h2"
-        component="h2"
+        component="h1"
         className={classes.title}
       >
         Upcoming Events
@@ -89,7 +103,7 @@ export default function Events() {
             padding: '20px 70px'
           }}
         >
-          <Card className={classes.line}>
+          <Card className={classes.card}>
             <CardMedia
               className={classes.media}
               src={upcoming_event_one.image}
@@ -97,16 +111,16 @@ export default function Events() {
               title="Tensorflow Event"
             />
             <CardContent>
-              <Typography gutterBottom variant="h5" component="h2">
-                {upcoming_event_one.date}
-              </Typography>
-              <Typography gutterBottom variant="h3" component="h2">
+              <Typography>{upcoming_event_one.date}</Typography>
+              <Typography gutterBottom variant="h5" component="h1">
                 {upcoming_event_one.title}
               </Typography>
               <Typography variant="body2" color="textSecondary" component="p">
                 {upcoming_event_one.descriprion}
               </Typography>
-              <Button variant="contained">Sign up</Button>
+              <Button variant="contained" className={classes.buttonRight}>
+                Sign up
+              </Button>
             </CardContent>
           </Card>
         </Grid>

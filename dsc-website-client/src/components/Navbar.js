@@ -15,25 +15,24 @@ import { makeStyles } from '@material-ui/core';
 
 const useStyles = makeStyles((theme) => ({
   appBar: {
-    backgroundColor: 'white',
-    boxShadow: 'none'
+    backgroundColor: theme.textColors.white,
+    boxShadow: '0px 1px 8px #aaaaaa'
   },
-
   logo: {
-    width: '80px'
+    width: '50%'
   },
   button_logo: {
-    margin: '40px 10px',
+    margin: '10px 5px',
     padding: '5px 30px'
   },
-  buttonLeftSide: {
-    margin: 'auto 20px',
-    padding: '5px 70px'
+  buttonRightSide: {
+    margin: 'auto 30px',
+    padding: '5px 50px'
   },
   buttonLeftTypo: {
-    fontSize: '32px',
+    fontSize: theme.fontSize.twentyfour,
     textTransform: 'none',
-    color: '#686c70'
+    color: theme.textColors.grey
   }
 }));
 
@@ -61,8 +60,7 @@ function Navbar() {
         {/* Right side */}
         <Grid container direction="row" justify="flex-end" alignItems="center">
           <Button
-            size="large"
-            className={classes.buttonLeftSide}
+            className={classes.buttonRightSide}
             onClick={() => {
               goToDiv('events');
             }}
@@ -71,7 +69,7 @@ function Navbar() {
           </Button>
           <Button
             size="large"
-            className={classes.buttonLeftSide}
+            className={classes.buttonRightSide}
             onClick={() => {
               goToDiv('team');
             }}
@@ -80,7 +78,7 @@ function Navbar() {
           </Button>
           <Button
             size="large"
-            className={classes.buttonLeftSide}
+            className={classes.buttonRightSide}
             onClick={() => {
               goToDiv('joinus');
             }}
