@@ -1,5 +1,4 @@
-import React, { useEffect, useState } from 'react';
-import { Link } from 'react-router-dom';
+import React from 'react';
 
 // Images
 import dsc_logo from './../static/images/dsc_logo.svg';

@@ -1,4 +1,4 @@
-import React, { react_events } from 'react';
+import React from 'react';
 
 // MUI
 import { makeStyles } from '@material-ui/core/styles';
@@ -8,6 +8,7 @@ import Card from '@material-ui/core/Card';
 import CardContent from '@material-ui/core/CardContent';
 import Typography from '@material-ui/core/Typography';
 import Button from '@material-ui/core/Button';
+import Avatar from '@material-ui/core/Avatar';
 
 import {
   upcoming_event_one,
@@ -17,6 +18,7 @@ import {
 const useStyles = makeStyles((theme) => ({
   root: {
     paddingTop: '5%',
+    paddingBottom: '5px',
     backgroundColor: theme.palette.primary.dark
   },
   card: {
@@ -25,7 +27,8 @@ const useStyles = makeStyles((theme) => ({
   },
   title: {
     color: theme.textColors.grey,
-    textAlign: 'center'
+    textAlign: 'center',
+    padding: '0 0 50px 0'
   },
   buttonRight: {
     textTransform: 'none',
@@ -48,6 +51,18 @@ const useStyles = makeStyles((theme) => ({
       backgroundColor: '#e8f0fe',
       boxShadow: 'none'
     }
+  },
+  AvatarLeft: {
+    color: theme.textColors.blue,
+    backgroundColor: 'rgb(214 238 255)',
+    width: 70,
+    height: 70
+  },
+  AvatarRight: {
+    color: theme.textColors.green,
+    backgroundColor: 'rgb(214 255 238)',
+    width: 50,
+    height: 50
   }
 }));
 
@@ -60,18 +75,43 @@ export default function Events() {
         <Card className={classes.card}>
           <CardMedia src={event.image} component="img" title="react Event" />
           <CardContent>
-            <Typography gutterBottom component="h2">
-              {event.date}
-            </Typography>
-            <Typography gutterBottom variant="h5" component="h1">
-              {event.title}
-            </Typography>
-            <Typography variant="body2" color="textSecondary" component="p">
-              {event.descriprion}
-            </Typography>
-            <Button variant="contained" className={classes.buttonLeft}>
-              Sign up
-            </Button>
+            <Grid
+              container
+              direction="row"
+              justify="center"
+              alignItems="flex-start"
+            >
+              <Grid item xs={10}>
+                <Typography component="h2" style={{ fontSize: 12 }}>
+                  {event.date}
+                </Typography>
+                <Typography
+                  variant="h5"
+                  component="h1"
+                  style={{ fontSize: 18 }}
+                >
+                  {event.title}
+                </Typography>
+                <Typography
+                  variant="body2"
+                  color="textSecondary"
+                  component="p"
+                  style={{ fontSize: 12 }}
+                >
+                  {event.descriprion}
+                </Typography>
+                <Button
+                  variant="contained"
+                  size="small"
+                  className={classes.buttonLeft}
+                >
+                  Sign up
+                </Button>
+              </Grid>
+              <Grid container item xs={2} justify="flex-end">
+                <Avatar className={classes.AvatarRight}>{event.icon}</Avatar>
+              </Grid>
+            </Grid>
           </CardContent>
         </Card>
       </Grid>
@@ -80,12 +120,7 @@ export default function Events() {
 
   return (
     <Grid id="events" className={classes.root}>
-      <Typography
-        gutterBottom
-        variant="h2"
-        component="h1"
-        className={classes.title}
-      >
+      <Typography variant="h2" component="h1" className={classes.title}>
         Upcoming Events
       </Typography>
 
@@ -97,7 +132,7 @@ export default function Events() {
         justify="center"
         alignItems="flex-start"
       >
-        <Grid item sm={4} xs={12}>
+        <Grid item sm={6} xs={12}>
           <Card className={classes.card}>
             <CardMedia
               className={classes.media}
@@ -106,16 +141,34 @@ export default function Events() {
               title="Tensorflow Event"
             />
             <CardContent>
-              <Typography>{upcoming_event_one.date}</Typography>
-              <Typography gutterBottom variant="h5" component="h1">
-                {upcoming_event_one.title}
-              </Typography>
-              <Typography variant="body2" color="textSecondary" component="p">
-                {upcoming_event_one.descriprion}
-              </Typography>
-              <Button variant="contained" className={classes.buttonRight}>
-                Sign up
-              </Button>
+              <Grid
+                container
+                direction="row"
+                justify="center"
+                alignItems="flex-start"
+              >
+                <Grid item xs={10}>
+                  <Typography>{upcoming_event_one.date}</Typography>
+                  <Typography variant="h5" component="h1">
+                    {upcoming_event_one.title}
+                  </Typography>
+                  <Typography
+                    variant="body2"
+                    color="textSecondary"
+                    component="p"
+                  >
+                    {upcoming_event_one.descriprion}
+                  </Typography>
+                  <Button variant="contained" className={classes.buttonRight}>
+                    Sign up
+                  </Button>
+                </Grid>
+                <Grid container item xs={2} justify="flex-end">
+                  <Avatar className={classes.AvatarLeft}>
+                    {upcoming_event_one.icon}
+                  </Avatar>
+                </Grid>
+              </Grid>
             </CardContent>
           </Card>
         </Grid>

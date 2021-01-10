@@ -73,7 +73,7 @@ export default function CustomizedAccordions(props) {
 
   return (
     <Accordion
-      style={{ border: 'none', backgroundColor: '#f1f3f4', margin: 0 }}
+      style={{ border: 'none', backgroundColor: '#fafafa', margin: 0 }}
       expanded={expanded}
       onChange={handleChange(!expanded)}
     >

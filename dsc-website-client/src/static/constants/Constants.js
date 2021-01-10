@@ -1,6 +1,6 @@
 import React from 'react';
-import logo from '../images/dsc_logo.svg';
 
+// Images
 import saba_fathi from './../images/members/saba_fathi.jpg';
 import pulasthi_peiris from './../images/members/pulasthi_peiris.JPG';
 import parsa_yadollahi from './../images/members/parsa_yadollahi.jpeg';
@@ -23,8 +23,7 @@ import event2 from './../images/pastEvents/event2_Info_Session.jpg';
 import event3 from './../images/pastEvents/event3_cloud_study.jpeg';
 import event4 from './../images/pastEvents/event4_tech_talk.jpeg';
 import event5 from './../images/pastEvents/event5_tech_talk.png';
-import event6 from './../images/pastEvents/event6_tech_talk.png';
-import event7 from './../images/pastEvents/event7_kubernetes.png';
+import event6 from './../images/pastEvents/event6_kubernetes.png';
 
 // Upcoming Events
 import css_events from '../images/upcomingEvents/css_event.jpeg';
@@ -98,7 +97,7 @@ export const pastEvents = [
   },
   {
     time: 'NOV 18, 2020',
-    image: event7,
+    image: event6,
     icon: <MenuBook />,
     title: 'Hands-On Workshop - Virtual',
     subheader: 'Intro to Kubernetes',
@@ -106,6 +105,40 @@ export const pastEvents = [
               currently working as an Online Programmer at Ubisoft Montreal, with more than 5 years
               of software product R&D experience in building RESTful web services on distributed
               cloud based systems and cloud native applications`
+  }
+];
+
+export const upcoming_event_one = {
+  date: 'NOV 18, 2020',
+  title: 'Hands-On Workshop - Virtual',
+  descriprion: `Our speaker, Omkar Joshi, is a Certified Kubernetes Application Developer,
+  currently working as an Online Programmer at Ubisoft Montreal, with more than 5 years
+  of software product R&D experience in building RESTful web services on distributed
+  cloud based systems and cloud native applications`,
+  image: tensor_flow_event,
+  icon: <ComputerIcon style={{ fontSize: 32 }} />
+};
+
+export const next_two_coming_events = [
+  {
+    date: 'NOV 18, 2020',
+    title: 'Hands-On Workshop - Virtual',
+    descriprion: `Our speaker, Omkar Joshi, is a Certified Kubernetes Application Developer,
+    currently working as an Online Programmer at Ubisoft Montreal, with more than 5 years
+    of software product R&D experience in building RESTful web services on distributed
+    cloud based systems and cloud native applications`,
+    image: css_events,
+    icon: <Chat style={{ fontSize: 24 }} />
+  },
+  {
+    date: 'NOV 18, 2020',
+    title: 'Hands-On Workshop - Virtual',
+    descriprion: `Our speaker, Omkar Joshi, is a Certified Kubernetes Application Developer,
+    currently working as an Online Programmer at Ubisoft Montreal, with more than 5 years
+    of software product R&D experience in building RESTful web services on distributed
+    cloud based systems and cloud native applications`,
+    image: react_events,
+    icon: <ComputerIcon style={{ fontSize: 24 }} />
   }
 ];
 
@@ -224,27 +257,5 @@ export const team_members = [
     fascinated with Fintech, algorithmic trading,
     as well as building the future of the financial and technical world`,
     picture: kareem_sayed
-  }
-];
-
-export const upcoming_event_one = {
-  date: 'DATE',
-  title: 'Title',
-  descriprion: 'description',
-  image: tensor_flow_event
-};
-
-export const next_two_coming_events = [
-  {
-    date: 'date1',
-    title: 'Title1',
-    descriprion: 'description1',
-    image: css_events
-  },
-  {
-    date: 'date2',
-    title: 'Title2',
-    descriprion: 'description2',
-    image: react_events
   }
 ];

@@ -3,7 +3,7 @@ export default {
     primary: {
       light: '#ffffff',
       main: '#b3e5fc',
-      dark: '#f1f3f4',
+      dark: '#fafafa',
       contrastText: '#000'
     },
     secondary: {
@@ -29,6 +29,6 @@ export default {
     blue: '#4285F4',
     red: '#DB4437',
     yellow: '#F4B400',
-    green: '0F9D58'
+    green: '#0F9D58'
   }
 };
