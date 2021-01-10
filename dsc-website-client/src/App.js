@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import './App.css';
 
 // Pages - Components
@@ -9,9 +9,17 @@ import themeFile from './util/theme';
 import { ThemeProvider as MuiThemeProvider } from '@material-ui/core/styles';
 import createMuiTheme from '@material-ui/core/styles/createMuiTheme';
 
+// AOS
+import AOS from 'aos';
+import 'aos/dist/aos.css';
+
 const theme = createMuiTheme(themeFile);
 
 function App() {
+  useEffect(() => {
+    AOS.init();
+    AOS.refresh();
+  }, []);
   return (
     <MuiThemeProvider theme={theme}>
       <div className="App">

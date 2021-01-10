@@ -75,7 +75,9 @@ const useStyles = makeStyles((theme) => ({
 
 function Team() {
   const classes = useStyles();
-  const leads = teams_leads.map((member) => {
+  let delay = 0;
+  const leads = teams_leads.map((member, index) => {
+    delay += 200;
     return (
       <Grid
         xs={4}
@@ -84,6 +86,8 @@ function Team() {
         justify="left"
         className={classes.individual}
         direction="column"
+        data-aos="zoom-in"
+        data-aos-delay={delay}
       >
         <Grid
           className={classes.box}
@@ -114,7 +118,8 @@ function Team() {
     );
   });
 
-  const developers = team_members.map((devs) => {
+  const developers = team_members.map((devs, index) => {
+    delay += 200;
     return (
       <Grid
         xs={4}
@@ -122,6 +127,8 @@ function Team() {
         justify="left"
         className={classes.individual}
         direction="row"
+        data-aos="zoom-in"
+        data-aos-delay={delay}
       >
         <Grid
           className={classes.box}

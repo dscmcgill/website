@@ -43,7 +43,7 @@ const useStyles = makeStyles((theme) => ({
 function Home() {
   const classes = useStyles();
   return (
-    <div id="home">
+    <div id="home" data-aos="zoom-in" data-aos-delay={200}>
       <Grid
         style={{ minHeight: '100vh', height: '100vh' }}
         container

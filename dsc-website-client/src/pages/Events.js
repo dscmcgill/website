@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState } from 'react';
 
 // MUI
 import { makeStyles } from '@material-ui/core/styles';
@@ -69,9 +69,19 @@ const useStyles = makeStyles((theme) => ({
 export default function Events() {
   const classes = useStyles();
 
-  const next_two_events = next_two_coming_events.map((event) => {
+  const delay = 200;
+
+  const next_two_events = next_two_coming_events.map((event, index) => {
     return (
-      <Grid container item xs={12} spacing={3} style={{ margin: '0px' }}>
+      <Grid
+        container
+        item
+        xs={12}
+        spacing={3}
+        style={{ margin: '0px' }}
+        data-aos="fade-left"
+        data-aos-delay={index * delay}
+      >
         <Card className={classes.card}>
           <CardMedia src={event.image} component="img" title="react Event" />
           <CardContent>
@@ -132,7 +142,13 @@ export default function Events() {
         justify="center"
         alignItems="flex-start"
       >
-        <Grid item sm={6} xs={12}>
+        <Grid
+          item
+          sm={6}
+          xs={12}
+          data-aos="fade-right"
+          data-aos-delay={delay + 200}
+        >
           <Card className={classes.card}>
             <CardMedia
               className={classes.media}
