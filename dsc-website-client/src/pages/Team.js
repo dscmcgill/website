@@ -61,8 +61,12 @@ const useStyles = makeStyles((theme) => ({
     padding: '15px 0px'
   },
   individual: {
-    borderRadius: '10px',
-    margin: '0 0px 5px 0'
+    // borderRadius: '10px',
+    // margin: '0 0px 0px 0',
+    maxWidth: '440px',
+    justify: 'center',
+    alignItems: 'center',
+    // minWidth: '20vw'
   },
   profile_pic: {
     width: 'auto',
@@ -70,6 +74,10 @@ const useStyles = makeStyles((theme) => ({
     border: '5px solid #0F9D58',
     borderRadius: '50%',
     margin: '3px 30px'
+  },
+
+  testing: {
+    width: '',
   }
 }));
 
@@ -81,9 +89,9 @@ function Team() {
         xs={4}
         item
         container
-        justify="left"
         className={classes.individual}
         direction="column"
+        spacing={0}
       >
         <Grid
           className={classes.box}
