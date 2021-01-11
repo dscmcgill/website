@@ -35,6 +35,7 @@ const useStyles = makeStyles((theme) => ({
     backgroundColor: theme.textColors.blue,
     fontSize: theme.fontSize.twelve,
     color: theme.textColors.white,
+    marginTop: 15,
     boxShadow: 'none',
     '&:hover': {
       backgroundColor: theme.textColors.blue
@@ -45,6 +46,7 @@ const useStyles = makeStyles((theme) => ({
     backgroundColor: theme.textColors.white,
     fontSize: theme.fontSize.twelve,
     color: theme.textColors.blue,
+    marginTop: 10,
     boxShadow: 'none',
     border: '1px solid #dadce0',
     '&:hover': {

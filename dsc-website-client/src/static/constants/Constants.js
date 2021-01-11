@@ -38,6 +38,11 @@ import Chat from '@material-ui/icons/Chat';
 import GroupWork from '@material-ui/icons/GroupWork';
 import MenuBook from '@material-ui/icons/MenuBook';
 
+// HomePage Icons
+import DeveloperModeIcon from '@material-ui/icons/DeveloperMode';
+import WorkIcon from '@material-ui/icons/Work';
+import Fab from '@material-ui/core/Fab';
+
 export const pastEvents = [
   {
     time: 'SEP 10, 2020',
@@ -257,5 +262,29 @@ export const team_members = [
     fascinated with Fintech, algorithmic trading,
     as well as building the future of the financial and technical world`,
     picture: kareem_sayed
+  }
+];
+
+export const homePageConstants = [
+  {
+    paragraph: `Meet other students on campus interested in developer
+    technologies. All are welcome, including those with diverse
+    backgrounds and different majors.`,
+    keywords: 'Connect',
+    icon: <GroupIcon style={{ color: '#ffffff' }} />
+  },
+  {
+    paragraph: `Learn about a wide range of technical topics where new skills are
+    gained through hands-on workshops, in-person training and project
+    building activities.`,
+    keywords: 'Learn',
+    icon: <DeveloperModeIcon style={{ color: '#ffffff' }} />
+  },
+  {
+    paragraph: `Apply your new learnings and connections to build great solutions
+    for local problems. Advance your skills, career and network. Give
+    back to your community by helping others learn as well.`,
+    keywords: 'Grow',
+    icon: <WorkIcon style={{ color: '#ffffff' }} />
   }
 ];
