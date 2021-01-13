@@ -32,7 +32,7 @@ const useStyles = makeStyles((theme) => ({
     fontSize: theme.fontSize.twentyfour,
     textTransform: 'none',
     color: theme.textColors.grey
-  }
+  },
 }));
 
 const goToDiv = (id) => {
@@ -43,7 +43,8 @@ function Navbar() {
   const classes = useStyles();
 
   return (
-    <AppBar className={classes.appBar}>
+    <>
+    <AppBar position="sticky" className={classes.appBar}>
       <Toolbar>
         {/* Left side */}
         <Button
@@ -87,6 +88,7 @@ function Navbar() {
         </Grid>
       </Toolbar>
     </AppBar>
+    </>
   );
 }
 

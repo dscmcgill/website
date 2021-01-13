@@ -6,12 +6,11 @@ import Grid from '@material-ui/core/Grid';
 import Card from '@material-ui/core/Card';
 import CardMedia from '@material-ui/core/CardMedia';
 import Typography from '@material-ui/core/Typography';
-import Paper from '@material-ui/core/Paper';
 import { makeStyles } from '@material-ui/core';
 
 // Images
 import dsc_logo from './../static/images/dsc_logo.svg';
-import homePageImage from './../static/images/homePageImage.jpg';
+import homePageImage from './../static/images/homePageImage.png';
 
 // Icons
 import Fab from '@material-ui/core/Fab';
@@ -39,6 +38,10 @@ const useStyles = makeStyles((theme) => ({
     color: theme.textColors.grey,
     textAlign: 'left',
     padding: '15px 0px'
+  },
+  media: {
+    background: 'transparent',
+    boxShadow: 'none'
   }
 }));
 
@@ -114,12 +117,12 @@ function Home() {
       item
       container
       justify="center"
-      sm={4}
+      sm={5}
       xs={6}
       data-aos="zoom-in"
       data-aos-delay={400}
     >
-      <Card>
+      <Card className={classes.media}>
         <CardMedia
           src={homePageImage}
           component="img"
@@ -131,7 +134,7 @@ function Home() {
   return (
     <div id="home">
       <Grid
-        style={{ minHeight: '100vh', height: '100vh' }}
+        style={{ minHeight: '100vh' }}
         container
         direction="row"
         justify="flex-start"
