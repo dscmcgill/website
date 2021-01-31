@@ -1,6 +1,6 @@
 import React from 'react';
-import logo from '../images/dsc_logo.svg';
 
+// Images
 import saba_fathi from './../images/members/saba_fathi.jpg';
 import pulasthi_peiris from './../images/members/pulasthi_peiris.JPG';
 import parsa_yadollahi from './../images/members/parsa_yadollahi.jpeg';
@@ -23,8 +23,7 @@ import event2 from './../images/pastEvents/event2_Info_Session.jpg';
 import event3 from './../images/pastEvents/event3_cloud_study.jpeg';
 import event4 from './../images/pastEvents/event4_tech_talk.jpeg';
 import event5 from './../images/pastEvents/event5_tech_talk.png';
-import event6 from './../images/pastEvents/event6_tech_talk.png';
-import event7 from './../images/pastEvents/event7_kubernetes.png';
+import event6 from './../images/pastEvents/event6_kubernetes.png';
 
 // Upcoming Events
 import css_events from '../images/upcomingEvents/css_event.jpeg';
@@ -38,6 +37,11 @@ import TableChartIcon from '@material-ui/icons/TableChart';
 import Chat from '@material-ui/icons/Chat';
 import GroupWork from '@material-ui/icons/GroupWork';
 import MenuBook from '@material-ui/icons/MenuBook';
+
+// HomePage Icons
+import DeveloperModeIcon from '@material-ui/icons/DeveloperMode';
+import WorkIcon from '@material-ui/icons/Work';
+import Fab from '@material-ui/core/Fab';
 
 export const pastEvents = [
   {
@@ -98,7 +102,7 @@ export const pastEvents = [
   },
   {
     time: 'NOV 18, 2020',
-    image: event7,
+    image: event6,
     icon: <MenuBook />,
     title: 'Hands-On Workshop - Virtual',
     subheader: 'Intro to Kubernetes',
@@ -109,13 +113,47 @@ export const pastEvents = [
   }
 ];
 
+export const upcoming_event_one = {
+  date: 'NOV 18, 2020',
+  title: 'Hands-On Workshop - Virtual',
+  descriprion: `Our speaker, Omkar Joshi, is a Certified Kubernetes Application Developer,
+  currently working as an Online Programmer at Ubisoft Montreal, with more than 5 years
+  of software product R&D experience in building RESTful web services on distributed
+  cloud based systems and cloud native applications`,
+  image: tensor_flow_event,
+  icon: <ComputerIcon style={{ fontSize: 32 }} />
+};
+
+export const next_two_coming_events = [
+  {
+    date: 'NOV 18, 2020',
+    title: 'Hands-On Workshop - Virtual',
+    descriprion: `Our speaker, Omkar Joshi, is a Certified Kubernetes Application Developer,
+    currently working as an Online Programmer at Ubisoft Montreal, with more than 5 years
+    of software product R&D experience in building RESTful web services on distributed
+    cloud based systems and cloud native applications`,
+    image: css_events,
+    icon: <Chat style={{ fontSize: 24 }} />
+  },
+  {
+    date: 'NOV 18, 2020',
+    title: 'Hands-On Workshop - Virtual',
+    descriprion: `Our speaker, Omkar Joshi, is a Certified Kubernetes Application Developer,
+    currently working as an Online Programmer at Ubisoft Montreal, with more than 5 years
+    of software product R&D experience in building RESTful web services on distributed
+    cloud based systems and cloud native applications`,
+    image: react_events,
+    icon: <ComputerIcon style={{ fontSize: 24 }} />
+  }
+];
+
 export const teams_leads = [
   {
     name: 'Maneth Kalatunge',
     position: 'DSC Lead',
     description: `Maneth is a U3 Computer Science Student
       interested in software development and content
-       creation. He talks about college re1lated
+       creation. He talks about college related
         topics in his youtube channel and podcast.`,
     picture: maneth
   },
@@ -123,8 +161,8 @@ export const teams_leads = [
     name: 'Parsa Yadollahi',
     position: 'Front-End Tech Lead',
     description: `Parsa is a third year Computer Science student
-    interested in quantitative finance. 
-    He was last seen roaming Trottier's 3rd floor, while being the six-quatre waste lord…`,
+    interested in software engineering and quantitative finance,
+    and being the six-quatre waste yute lord…`,
     picture: parsa_yadollahi
   },
   {
@@ -157,8 +195,8 @@ export const team_members = [
   {
     name: 'Saba Fathi',
     position: 'Front-End Dev',
-    description: `2 bugs fixed, 14 bugs found.
-    Saba is a first year Software Engineering student and is interested
+    description: `2 bugs fixed, 14 bugs found. First Year SWE student…
+    Saba is a first year software engineering student and is interested
     in the gaming industry, cursed memes and is the embodiment of 🗿.
     Rumor has it, he lives off steak.`,
     picture: saba_fathi
@@ -227,24 +265,26 @@ export const team_members = [
   }
 ];
 
-export const upcoming_event_one = {
-  date: 'DATE',
-  title: 'Title',
-  descriprion: 'description',
-  image: tensor_flow_event
-};
-
-export const next_two_coming_events = [
+export const homePageConstants = [
   {
-    date: 'date1',
-    title: 'Title1',
-    descriprion: 'description1',
-    image: css_events
+    paragraph: `Meet other students on campus interested in developer
+    technologies. All are welcome, including those with diverse
+    backgrounds and different majors.`,
+    keywords: 'Connect',
+    icon: <GroupIcon style={{ color: '#ffffff' }} />
   },
   {
-    date: 'date2',
-    title: 'Title2',
-    descriprion: 'description2',
-    image: react_events
+    paragraph: `Learn about a wide range of technical topics where new skills are
+    gained through hands-on workshops, in-person training and project
+    building activities.`,
+    keywords: 'Learn',
+    icon: <DeveloperModeIcon style={{ color: '#ffffff' }} />
+  },
+  {
+    paragraph: `Apply your new learnings and connections to build great solutions
+    for local problems. Advance your skills, career and network. Give
+    back to your community by helping others learn as well.`,
+    keywords: 'Grow',
+    icon: <WorkIcon style={{ color: '#ffffff' }} />
   }
 ];
