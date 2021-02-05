@@ -161,8 +161,8 @@ export const teams_leads = [
     name: 'Parsa Yadollahi',
     position: 'Front-End Tech Lead',
     description: `Parsa is a third year Computer Science student
-    interested in software engineering and quantitative finance,
-    and being the six-quatre waste yute lord…`,
+    interested in quantitative finance.
+    He was last seen roaming Trottier's 3rd floor.`,
     picture: parsa_yadollahi
   },
   {
@@ -195,8 +195,7 @@ export const team_members = [
   {
     name: 'Saba Fathi',
     position: 'Front-End Dev',
-    description: `2 bugs fixed, 14 bugs found. First Year SWE student…
-    Saba is a first year software engineering student and is interested
+    description: `2 bugs fixed, 14 bugs found. Saba is a first year software engineering student and is interested
     in the gaming industry, cursed memes and is the embodiment of 🗿.
     Rumor has it, he lives off steak.`,
     picture: saba_fathi

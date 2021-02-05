@@ -19,6 +19,7 @@ export default {
   fontSize: {
     twelve: '12px',
     sixteen: '16px',
+    eighteen: '18px',
     twentyfour: '24px',
     thirtytwo: '32px',
     fortyeight: '48px'

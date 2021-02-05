@@ -24,7 +24,7 @@ const useStyles = makeStyles((theme) => ({
     textAlign: 'center'
   },
   lead: {
-    color: theme.textColors.red
+    color: theme.textColors.yellow
   },
 
   not_lead: {
@@ -32,18 +32,19 @@ const useStyles = makeStyles((theme) => ({
   },
 
   description: {
-    fontSize: theme.fontSize.sixteen,
-    color: theme.textColors.white,
+    fontSize: '30px',
+    color: theme.textColors.grey,
     padding: '10px',
     borderRadius: '5px',
-    background: theme.textColors.grey
+    background: theme.textColors.white
   },
 
   name: {
     background: '#4285F4',
-    borderRadius: '5px 5px 0 0',
+    borderRadius: '10px 10px 0 0',
     color: theme.textColors.white,
-    fontSize: theme.fontSize.sixteen,
+    fontSize: '30px',
+    fontWeight: 'bold',
     padding: '5px 0 5px 5px'
   },
 
@@ -51,7 +52,7 @@ const useStyles = makeStyles((theme) => ({
     background: theme.textColors.blue,
     borderRadius: '0 0 5px 5px',
     color: theme.textColors.white,
-    fontSize: theme.fontSize.sixteen,
+    fontSize: theme.fontSize.twentyfour,
     padding: '0 5px 5px 5px'
   },
 
@@ -167,7 +168,7 @@ function Team() {
       <Grid container spacing={2} style={{ margin: '5%' }} alignItems="center">
         <Grid container xs={12}>
           <Grid item xs={12}>
-            <Typography variant="h2" component="h1" className={classes.title}>
+            <Typography variant="h3" component="h4" className={classes.title}>
               Meet the team
             </Typography>
           </Grid>
