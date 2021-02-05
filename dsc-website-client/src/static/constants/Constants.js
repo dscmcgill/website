@@ -155,7 +155,8 @@ export const teams_leads = [
       interested in software development and content
        creation. He talks about college related
         topics in his youtube channel and podcast.`,
-    picture: maneth
+    picture: maneth,
+    LinkedIn: `https://www.linkedin.com/in/manethk/`
   },
   {
     name: 'Parsa Yadollahi',
@@ -163,7 +164,8 @@ export const teams_leads = [
     description: `Parsa is a third year Computer Science student
     interested in software engineering and quantitative finance,
     and being the six-quatre waste yute lord…`,
-    picture: parsa_yadollahi
+    picture: parsa_yadollahi,
+    LinkedIn: `https://www.linkedin.com/in/parsa-yadollahi/`
   },
   {
     name: 'Mohamed Beydoun',
@@ -171,14 +173,16 @@ export const teams_leads = [
     description: `U3 Computer Science student with interest in Cloud and Web development,
     as well as robotics. I spend most of my time rock climbing,
     gaming, and building weird robots`,
-    picture: mohamed_beydoun
+    picture: mohamed_beydoun,
+    LinkedIn: `https://www.linkedin.com/in/mohamed-beydoun/`
   },
   {
     name: 'Jenna Latiok',
     position: 'Communications Lead',
     description: `Fourth year comp and neuroscience student.
     Low key music critic and meme enthusiast.`,
-    picture: jenna_latiok
+    picture: jenna_latiok,
+    LinkedIn: `https://www.linkedin.com/in/jenna-latiok/`
   },
   {
     name: 'Simon Berens',
@@ -187,7 +191,8 @@ export const teams_leads = [
     distributed systems and competitive programming.
     He spends his time reading, playing ping pong,
     and typing on his dactyl manuform`,
-    picture: simon_berens
+    picture: simon_berens,
+    LinkedIn: `https://www.linkedin.com/in/simonberens/`
   }
 ];
 
@@ -199,7 +204,8 @@ export const team_members = [
     Saba is a first year software engineering student and is interested
     in the gaming industry, cursed memes and is the embodiment of 🗿.
     Rumor has it, he lives off steak.`,
-    picture: saba_fathi
+    picture: saba_fathi,
+    LinkedIn: `https://www.linkedin.com/in/saba-fathi2001/`
   },
   {
     name: 'Pulasthi Peiris',
@@ -208,19 +214,22 @@ export const team_members = [
     student with interests in embedded systems design and full stack
     development. He loves cheesecake, speaks at 40 Hz sometimes,
     and enjoys automating things to make life easier.`,
-    picture: pulasthi_peiris
+    picture: pulasthi_peiris,
+    LinkedIn: `https://www.linkedin.com/in/pulasthipeiris/`
   },
   {
     name: 'Julie Tian',
     position: 'Back-End Developer',
     description: 'U3 Pharmacology and Computer Science. I build keyboards',
-    picture: julie_tian
+    picture: julie_tian,
+    LinkedIn: `https://www.linkedin.com/in/julietian/`
   },
   {
     name: 'Michael Li',
     position: 'Back-End Developer',
     description: `U3 SWE student, enjoy watching and playing fútbol, hala madrid ⚽`,
-    picture: michael_li
+    picture: michael_li,
+    LinkedIn: `https://www.linkedin.com/in/lierjun/`
   },
   {
     name: 'Cole Killian',
@@ -228,32 +237,37 @@ export const team_members = [
     description: `Fellow Math and Comp Sci Student.
     Enjoys hiking, guitar, building full stack apps, and competitive programming.
     Aspiring blogger, ask me about org mode :).`,
-    picture: cole_killian
+    picture: cole_killian,
+    LinkedIn: `https://www.linkedin.com/in/colekillian/`
   },
   {
     name: 'Changjun Zhou',
     position: 'Front-End Developer',
     description: `U2 SWE student, a secret guy who is trying to find how to use docker.`,
-    picture: changjun_zhou
+    picture: changjun_zhou,
+    LinkedIn: `https://www.linkedin.com/in/zcjun/`
   },
   {
     name: 'Massy Mahamli',
     position: 'Design Lead & Frontend Developer',
     description: `U3 Software engineering student , love creative tech and filmmaking`,
-    picture: massy_mahamli
+    picture: massy_mahamli,
+    LinkedIn: `https://www.linkedin.com/in/massy-mahamli/`
   },
   {
     name: 'James Ting',
     position: 'Back-End Developer',
     description: `U3 Computer Science student from Vancouver,
     who enjoys solving problems, coding programs and flying planes`,
-    picture: james_ting
+    picture: james_ting,
+    LinkedIn: `https://www.linkedin.com/in/james-b-ting/`
   },
   {
     name: 'Ridwan Kurmally',
     position: 'Back-End Developer',
     description: `U3 Honours CS student, love gaming, football and programming challenges`,
-    picture: ridwan_kumarlly
+    picture: ridwan_kumarlly,
+    LinkedIn: `https://www.linkedin.com/in/ridwan-kurmally/`
   },
   {
     name: 'Kareem Sayed',
@@ -261,7 +275,8 @@ export const team_members = [
     description: `U3 Finance and CS student from Vancouver and Cairo,
     fascinated with Fintech, algorithmic trading,
     as well as building the future of the financial and technical world`,
-    picture: kareem_sayed
+    picture: kareem_sayed,
+    LinkedIn: `https://www.linkedin.com/in/kareem-sayed-5b1b03107/`
   }
 ];
 
