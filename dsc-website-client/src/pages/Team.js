@@ -38,12 +38,8 @@ const useStyles = makeStyles((theme) => ({
     color: theme.textColors.grey,
     padding: '10px',
     borderRadius: '5px',
-<<<<<<< HEAD
-    background: theme.textColors.white
-=======
-    background: theme.textColors.grey,
+    background: theme.textColors.white,
     textAlign: 'center'
->>>>>>> 9366a61d1e1e09615581e8b3997522db3e949200
   },
 
   name: {
@@ -57,7 +53,7 @@ const useStyles = makeStyles((theme) => ({
 
   position: {
     background: theme.textColors.blue,
-    borderRadius: '0 0 5px 5px',
+    borderRadius: '0 0 10px 10px',
     color: theme.textColors.white,
     fontSize: theme.fontSize.twentyfour,
     padding: '0 5px 5px 5px'
