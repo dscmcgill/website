@@ -34,8 +34,9 @@ const useStyles = makeStyles((theme) => ({
   },
 
   description: {
+    backgroundColor: theme.palette.primary.dark,
     fontSize: theme.fontSize.sixteen,
-    color: theme.textColors.white,
+    color: theme.textColors.grey,
     padding: '10px',
     borderRadius: '5px',
     background: theme.textColors.grey,
@@ -46,7 +47,8 @@ const useStyles = makeStyles((theme) => ({
     background: '#4285F4',
     borderRadius: '5px 5px 0 0',
     color: theme.textColors.white,
-    fontSize: theme.fontSize.sixteen,
+    fontSize: theme.fontSize.twentyfour,
+    fontWeight: 'bold',
     padding: '5px 0 5px 5px'
   },
 
