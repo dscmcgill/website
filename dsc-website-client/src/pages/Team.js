@@ -5,6 +5,8 @@ import './../App.css';
 import { makeStyles } from '@material-ui/core';
 import Grid from '@material-ui/core/Grid';
 import Typography from '@material-ui/core/Typography';
+import IconButton from '@material-ui/core/IconButton';
+import LinkedInIcon from '@material-ui/icons/LinkedIn';
 
 import { team_members, teams_leads } from './../static/constants/Constants';
 
@@ -36,7 +38,12 @@ const useStyles = makeStyles((theme) => ({
     color: theme.textColors.grey,
     padding: '10px',
     borderRadius: '5px',
+<<<<<<< HEAD
     background: theme.textColors.white
+=======
+    background: theme.textColors.grey,
+    textAlign: 'center'
+>>>>>>> 9366a61d1e1e09615581e8b3997522db3e949200
   },
 
   name: {
@@ -108,12 +115,19 @@ function Team() {
           </Grid>
         </Grid>
         <Grid alignItems="flex-start" container item s={6}>
-          <Typography
-            className={classes.description}
-            style={{ textAlign: 'left' }}
-          >
+          <Typography className={classes.description}>
             {member.description}
           </Typography>
+        </Grid>
+        <Grid container direction="row" justify="center" alignItems="center">
+          <IconButton
+            style={{ color: '#2867B2' }}
+            onClick={() => {
+              window.open(member.LinkedIn);
+            }}
+          >
+            <LinkedInIcon style={{ width: 30, height: 30 }} />
+          </IconButton>
         </Grid>
       </Grid>
     );
@@ -152,6 +166,16 @@ function Team() {
           <Typography className={classes.description}>
             {devs.description}
           </Typography>
+        </Grid>
+        <Grid container direction="row" justify="center" alignItems="center">
+          <IconButton
+            style={{ color: '#2867B2' }}
+            onClick={() => {
+              window.open(devs.LinkedIn);
+            }}
+          >
+            <LinkedInIcon style={{ width: 30, height: 30 }} />
+          </IconButton>
         </Grid>
       </Grid>
     );
