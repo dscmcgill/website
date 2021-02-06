@@ -9,6 +9,7 @@ import julie_tian from './../images/members/julie_tian.jpg';
 import maneth from './../images/members/Maneth.jpg';
 import james_ting from './../images/members/james_ting.jpeg';
 import simon_berens from './../images/members/simon_berens.jpg';
+import xiao_yang from './../images/members/xiao_yang.jpg';
 import jenna_latiok from './../images/members/jenna_latiok.jpg';
 import changjun_zhou from './../images/members/changjun_zhou.jpg';
 import ridwan_kumarlly from './../images/members/ridwan_kumarlly.jpg';
@@ -26,9 +27,9 @@ import event5 from './../images/pastEvents/event5_tech_talk.png';
 import event6 from './../images/pastEvents/event6_kubernetes.png';
 
 // Upcoming Events
-import css_events from '../images/upcomingEvents/css_event.jpeg';
-import react_events from '../images/upcomingEvents/react_event.png';
-import tensor_flow_event from '../images/upcomingEvents/tensor_flow_event.png';
+import ws1 from '../images/upcomingEvents/ws1.jpg';
+import ws2 from '../images/upcomingEvents/ws2.jpg';
+import ws3 from '../images/upcomingEvents/ws3.jpg';
 
 // Past Events Icons
 import ComputerIcon from '@material-ui/icons/Computer';
@@ -114,36 +115,35 @@ export const pastEvents = [
 ];
 
 export const upcoming_event_one = {
-  date: 'NOV 18, 2020',
-  title: 'Hands-On Workshop - Virtual',
-  descriprion: `Our speaker, Omkar Joshi, is a Certified Kubernetes Application Developer,
-  currently working as an Online Programmer at Ubisoft Montreal, with more than 5 years
-  of software product R&D experience in building RESTful web services on distributed
-  cloud based systems and cloud native applications`,
-  image: tensor_flow_event,
-  icon: <ComputerIcon style={{ fontSize: 32 }} />
+  date: 'Feb 12, 2021',
+  title: 'Full stack bootcamp - Workshop 1 - Virtual',
+  descriprion: `This is the first of an 8 workshops long bootcamp covering the entire application
+  development process and application maintenance. We will be using a popular tech stack
+  and we hope this helps students build full-stack projects with the best practices.
+  Here, we will introduce you to Express and the Project Structure`,
+  image: ws1,
+  icon: <ComputerIcon style={{ fontSize: 32 }} />,
+  url: `https://dsc.community.dev/events/details/developer-student-clubs-mcgill-university-presents-workshop-1-introduction-to-express-and-project-structure/`
 };
 
 export const next_two_coming_events = [
   {
-    date: 'NOV 18, 2020',
-    title: 'Hands-On Workshop - Virtual',
-    descriprion: `Our speaker, Omkar Joshi, is a Certified Kubernetes Application Developer,
-    currently working as an Online Programmer at Ubisoft Montreal, with more than 5 years
-    of software product R&D experience in building RESTful web services on distributed
-    cloud based systems and cloud native applications`,
-    image: css_events,
-    icon: <Chat style={{ fontSize: 24 }} />
+    date: 'FEB 16, 2021',
+    title: 'Full stack bootcamp - Workshop 2 - Virtual',
+    descriprion: `The second workshop where we help students
+    understand Express JS with real application and a hands on project`,
+    image: ws2,
+    icon: <Chat style={{ fontSize: 24 }} />,
+    url: `https://dsc.community.dev/events/details/developer-student-clubs-mcgill-university-presents-workshop-2-learn-express-js/`
   },
   {
-    date: 'NOV 18, 2020',
-    title: 'Hands-On Workshop - Virtual',
-    descriprion: `Our speaker, Omkar Joshi, is a Certified Kubernetes Application Developer,
-    currently working as an Online Programmer at Ubisoft Montreal, with more than 5 years
-    of software product R&D experience in building RESTful web services on distributed
-    cloud based systems and cloud native applications`,
-    image: react_events,
-    icon: <ComputerIcon style={{ fontSize: 24 }} />
+    date: 'FEB 18, 2021',
+    title: 'Full stack bootcamp - Workshop 3 - Virtual',
+    descriprion: `The last backend workshop before the first upcoming frontend workshop. Here we help students
+    have a deeper knowldege of Databases and Software Testing with MongoDB`,
+    image: ws3,
+    icon: <Chat style={{ fontSize: 24 }} />,
+    url: `https://dsc.community.dev/events/details/developer-student-clubs-mcgill-university-presents-workshop-3-databases-and-software-testing-with-mongodb/`
   }
 ];
 
@@ -192,6 +192,22 @@ export const teams_leads = [
     and typing on his dactyl manuform`,
     picture: simon_berens,
     LinkedIn: `https://www.linkedin.com/in/simonberens/`
+  },
+  {
+    name: 'Xiao Yang',
+    position: 'Marketing Lead',
+    description: `Xiao is a third Computer Science student interested
+    in product development and sales engineering. In her free time,
+     she enjoys dancing, going to the gym, and trying out different cuisines.`,
+    picture: xiao_yang,
+    LinkedIn: `https://www.linkedin.com/in/xiao-yang4/`
+  },
+  {
+    name: 'Julie Tian',
+    position: 'Back-End Developer',
+    description: 'U3 Pharmacology and Computer Science. I build keyboards',
+    picture: julie_tian,
+    LinkedIn: `https://www.linkedin.com/in/julietian/`
   }
 ];
 
@@ -214,13 +230,6 @@ export const team_members = [
     and enjoys automating things to make life easier.`,
     picture: pulasthi_peiris,
     LinkedIn: `https://www.linkedin.com/in/pulasthipeiris/`
-  },
-  {
-    name: 'Julie Tian',
-    position: 'Back-End Developer',
-    description: 'U3 Pharmacology and Computer Science. I build keyboards',
-    picture: julie_tian,
-    LinkedIn: `https://www.linkedin.com/in/julietian/`
   },
   {
     name: 'Michael Li',
@@ -248,7 +257,7 @@ export const team_members = [
   {
     name: 'Massy Mahamli',
     position: 'Design Lead & Frontend Developer',
-    description: `U3 Software engineering student , love creative tech and filmmaking`,
+    description: `U3 Software engineering student that loves creative tech and filmmaking`,
     picture: massy_mahamli,
     LinkedIn: `https://www.linkedin.com/in/massy-mahamli/`
   },

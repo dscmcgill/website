@@ -41,7 +41,8 @@ const useStyles = makeStyles((theme) => ({
   },
   media: {
     background: 'transparent',
-    boxShadow: 'none'
+    boxShadow: 'none',
+    padding: '0 65px 0 0px'
   }
 }));
 
@@ -74,7 +75,7 @@ function Home() {
       container
       justify="center"
       item
-      xs={7}
+      xs={6}
       data-aos="zoom-in"
       data-aos-delay={200}
     >
@@ -117,7 +118,7 @@ function Home() {
       item
       container
       justify="center"
-      sm={5}
+      sm={6}
       xs={6}
       data-aos="zoom-in"
       data-aos-delay={400}

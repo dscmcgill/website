@@ -116,6 +116,7 @@ export default function Events() {
                   variant="contained"
                   size="small"
                   className={classes.buttonLeft}
+                  onClick={() => window.open(event.url)}
                 >
                   Sign up
                 </Button>
@@ -177,7 +178,11 @@ export default function Events() {
                   >
                     {upcoming_event_one.descriprion}
                   </Typography>
-                  <Button variant="contained" className={classes.buttonRight}>
+                  <Button
+                    variant="contained"
+                    className={classes.buttonRight}
+                    onClick={() => window.open(upcoming_event_one.url)}
+                  >
                     Sign up
                   </Button>
                 </Grid>

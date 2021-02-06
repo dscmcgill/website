@@ -81,7 +81,7 @@ function Team() {
   const classes = useStyles();
   let delay = 0;
   const leads = teams_leads.map((member, index) => {
-    delay += 200;
+    delay += 100;
     return (
       <Grid
         xs={4}
@@ -130,7 +130,7 @@ function Team() {
   });
 
   const developers = team_members.map((devs, index) => {
-    delay += 200;
+    delay += 100;
     return (
       <Grid
         xs={4}
