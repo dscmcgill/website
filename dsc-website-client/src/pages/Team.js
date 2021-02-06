@@ -26,11 +26,13 @@ const useStyles = makeStyles((theme) => ({
     textAlign: 'center'
   },
   lead: {
-    color: theme.textColors.yellow
+    color: theme.textColors.yellow,
+    padding: '30px 0px 20px 0px'
   },
 
   not_lead: {
-    color: theme.textColors.yellow
+    color: theme.textColors.yellow,
+    padding: '30px 0px 20px 0px'
   },
 
   description: {
@@ -101,7 +103,11 @@ function Team() {
           direction="row"
         >
           <Grid item xs={6}>
-            <img src={member.picture} className={classes.profile_pic} />
+            <img
+              alt={member.picture}
+              src={member.picture}
+              className={classes.profile_pic}
+            />
           </Grid>
           <Grid item xs={6} className={classes.name_pos}>
             <Typography className={classes.name}>{member.name}</Typography>
@@ -149,7 +155,11 @@ function Team() {
           direction="row"
         >
           <Grid item xs={6}>
-            <img src={devs.picture} className={classes.profile_pic} />
+            <img
+              alt={devs.picture}
+              src={devs.picture}
+              className={classes.profile_pic}
+            />
           </Grid>
           <Grid item xs={6} className={classes.name_pos}>
             <Typography className={classes.name}>{devs.name}</Typography>

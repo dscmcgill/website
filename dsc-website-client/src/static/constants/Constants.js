@@ -41,7 +41,6 @@ import MenuBook from '@material-ui/icons/MenuBook';
 // HomePage Icons
 import DeveloperModeIcon from '@material-ui/icons/DeveloperMode';
 import WorkIcon from '@material-ui/icons/Work';
-import Fab from '@material-ui/core/Fab';
 
 export const pastEvents = [
   {
