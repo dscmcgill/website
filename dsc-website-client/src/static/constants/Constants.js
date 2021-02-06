@@ -16,6 +16,7 @@ import michael_li from './../images/members/michael_li.jpg';
 import cole_killian from './../images/members/cole_killian.png';
 import massy_mahamli from './../images/members/massy_mahamli.JPG';
 import kareem_sayed from './../images/members/kareem_sayed.jpg';
+import xiao_yang from './../images/members/xiao_yang.jpg';
 
 // Past events images
 import event1 from './../images/pastEvents/event1_tech_talk.png';
@@ -190,6 +191,29 @@ export const teams_leads = [
     and typing on his dactyl manuform`,
     picture: simon_berens,
     LinkedIn: `https://www.linkedin.com/in/simonberens/`
+  },
+  {
+    name: 'Xiao Yang',
+    position: 'Marketing Lead',
+    description: `Xiao is a third Computer Science student interested
+    in product development and sales engineering. In her free time,
+     she enjoys dancing, going to the gym, and trying out different cuisines.`,
+    picture: xiao_yang,
+    LinkedIn: `https://www.linkedin.com/in/xiao-yang4/`
+  },
+  {
+    name: 'Julie Tian',
+    position: 'Vice Lead Communications',
+    description: 'U3 Pharmacology and Computer Science. I build keyboards',
+    picture: julie_tian,
+    LinkedIn: `https://www.linkedin.com/in/julietian/`
+  },
+  {
+    name: 'Massy Mahamli',
+    position: 'Design Lead & Frontend Developer',
+    description: `U3 Software engineering student , love creative tech and filmmaking`,
+    picture: massy_mahamli,
+    LinkedIn: `https://www.linkedin.com/in/massy-mahamli/`
   }
 ];
 
@@ -214,13 +238,6 @@ export const team_members = [
     LinkedIn: `https://www.linkedin.com/in/pulasthipeiris/`
   },
   {
-    name: 'Julie Tian',
-    position: 'Back-End Developer',
-    description: 'U3 Pharmacology and Computer Science. I build keyboards',
-    picture: julie_tian,
-    LinkedIn: `https://www.linkedin.com/in/julietian/`
-  },
-  {
     name: 'Michael Li',
     position: 'Back-End Developer',
     description: `U3 SWE student, enjoy watching and playing fútbol, hala madrid ⚽`,
@@ -242,13 +259,6 @@ export const team_members = [
     description: `U2 SWE student, a secret guy who is trying to find how to use docker.`,
     picture: changjun_zhou,
     LinkedIn: `https://www.linkedin.com/in/zcjun/`
-  },
-  {
-    name: 'Massy Mahamli',
-    position: 'Design Lead & Frontend Developer',
-    description: `U3 Software engineering student , love creative tech and filmmaking`,
-    picture: massy_mahamli,
-    LinkedIn: `https://www.linkedin.com/in/massy-mahamli/`
   },
   {
     name: 'James Ting',
