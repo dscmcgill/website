@@ -203,8 +203,11 @@ export const teams_leads = [
   },
   {
     name: 'Julie Tian',
-    position: 'Vice Lead Communications',
-    description: 'U3 Pharmacology and Computer Science. I build keyboards',
+    position: 'Vice Lead Communications & backend dev',
+    description: `Julie Tian is a fourth-year pharmacology and
+    computer science student interested in mobile development,
+    gaming and building her own keyboards. Although these days,
+     she has a hard time focusing on anything but her new puppy.`,
     picture: julie_tian,
     LinkedIn: `https://www.linkedin.com/in/julietian/`
   },
