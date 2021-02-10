@@ -16,6 +16,9 @@ import {
 } from './../static/constants/Constants';
 
 const useStyles = makeStyles((theme) => ({
+  gridRoot: {
+    flexGrow: 1
+  },
   root: {
     paddingTop: '5%',
     paddingBottom: '5px',
@@ -77,54 +80,53 @@ export default function Events() {
     return (
       <Grid
         container
-        item
-        xs={12}
-        spacing={3}
-        style={{ margin: '0px' }}
+        style={{ margin: '10px' }}
         data-aos="fade-left"
         data-aos-delay={index * delay}
       >
         <Card className={classes.card}>
           <CardMedia src={event.image} component="img" title="react Event" />
           <CardContent>
-            <Grid
-              container
-              direction="row"
-              justify="center"
-              alignItems="flex-start"
-            >
-              <Grid item xs={10}>
-                <Typography component="h2" style={{ fontSize: 12 }}>
-                  {event.date}
-                </Typography>
-                <Typography
-                  variant="h5"
-                  component="h1"
-                  style={{ fontSize: 18 }}
-                >
-                  {event.title}
-                </Typography>
-                <Typography
-                  variant="body2"
-                  color="textSecondary"
-                  component="p"
-                  style={{ fontSize: 12 }}
-                >
-                  {event.descriprion}
-                </Typography>
-                <Button
-                  variant="contained"
-                  size="small"
-                  className={classes.buttonLeft}
-                  onClick={() => window.open(event.url)}
-                >
-                  Sign up
-                </Button>
+            <div className={classes.gridoot}>
+              <Grid
+                container
+                direction="row"
+                justify="center"
+                alignItems="flex-start"
+              >
+                <Grid item xs={10} sm={9}>
+                  <Typography component="h2" style={{ fontSize: 12 }}>
+                    {event.date}
+                  </Typography>
+                  <Typography
+                    variant="h5"
+                    component="h1"
+                    style={{ fontSize: 18 }}
+                  >
+                    {event.title}
+                  </Typography>
+                  <Typography
+                    variant="body2"
+                    color="textSecondary"
+                    component="p"
+                    style={{ fontSize: 12 }}
+                  >
+                    {event.descriprion}
+                  </Typography>
+                  <Button
+                    variant="contained"
+                    size="small"
+                    className={classes.buttonLeft}
+                    onClick={() => window.open(event.url)}
+                  >
+                    Sign up
+                  </Button>
+                </Grid>
+                <Grid container item xs={2} sm={3} justify="flex-end">
+                  <Avatar className={classes.AvatarRight}>{event.icon}</Avatar>
+                </Grid>
               </Grid>
-              <Grid container item xs={2} justify="flex-end">
-                <Avatar className={classes.AvatarRight}>{event.icon}</Avatar>
-              </Grid>
-            </Grid>
+            </div>
           </CardContent>
         </Card>
       </Grid>

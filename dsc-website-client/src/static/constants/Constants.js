@@ -148,7 +148,7 @@ export const next_two_coming_events = [
 
 export const teams_leads = [
   {
-    name: 'Maneth Kalatunge',
+    name: 'Maneth Kulatunge',
     position: 'DSC Lead',
     description: `Maneth is a U3 Computer Science Student
       interested in software development and content
@@ -159,7 +159,7 @@ export const teams_leads = [
   },
   {
     name: 'Parsa Yadollahi',
-    position: 'Front-End Tech Lead',
+    position: 'Front-End Lead',
     description: `Parsa is a third year Computer Science student interested in quantitative finance,
     He was last seen roaming Trottier's third floor.`,
     picture: parsa_yadollahi,

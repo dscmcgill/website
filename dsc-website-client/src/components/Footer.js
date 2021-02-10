@@ -30,6 +30,20 @@ const useStyles = makeStyles((theme) => ({
     color: theme.textColors.grey,
     textAlign: 'center',
     fontSize: theme.fontSize.sixteen
+  },
+  bottomTextHref: {
+    color: theme.textColors.grey,
+    textAlign: 'center',
+    fontSize: theme.fontSize.sixteen,
+    transition: 'all .3s ease',
+    '&:hover': {
+      color: theme.textColors.blue,
+      fontSize: theme.fontSize.eighteen
+    }
+  },
+  a: {
+    color: 'inherit',
+    textDecoration: 'inherit'
   }
 }));
 
@@ -70,6 +84,20 @@ function Footer() {
       >
         © Developer Student Clubs McGill University 2021
       </Typography>
+      <a
+        href="https://forms.gle/2Tb7QYcEfoFRnHgw8"
+        target="_blank"
+        rel="noopener noreferrer"
+        className={classes.a}
+      >
+        <Typography
+          variant="subtitle1"
+          component="p"
+          className={classes.bottomTextHref}
+        >
+          Subscribe to our newsletter here!
+        </Typography>
+      </a>
       <br />
     </div>
   );
