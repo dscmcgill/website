@@ -26,11 +26,12 @@ import event4 from './../images/pastEvents/event4_tech_talk.jpeg';
 import event5 from './../images/pastEvents/event5_tech_talk.png';
 import event6 from './../images/pastEvents/event6_kubernetes.png';
 import ws1 from '../images/pastEvents/ws1.jpg';
+import ws2 from '../images/pastEvents/ws2.jpg';
 
 // Upcoming Events
-import ws2 from '../images/upcomingEvents/ws2.jpg';
 import ws3 from '../images/upcomingEvents/ws3.jpg';
 import ws4 from '../images/upcomingEvents/ws4.jpg';
+import ws5 from '../images/upcomingEvents/ws5.png';
 
 // Past Events Icons
 import ComputerIcon from '@material-ui/icons/Computer';
@@ -46,6 +47,15 @@ import WorkIcon from '@material-ui/icons/Work';
 
 export const pastEvents = [
   {
+    itme: 'FEB 16, 2021 at 5:30',
+    image: ws2,
+    title: 'Full stack bootcamp - Workshop 2',
+    subheader: 'Intro to express',
+    content: `The second workshop where we help students
+    understand Express JS with real application and a hands on project.`,
+    icon: <ComputerIcon />
+  },
+  {
     time: 'Feb 12, 2021',
     image: ws1,
     icon: <ComputerIcon />,
@@ -54,8 +64,7 @@ export const pastEvents = [
     content: `This is the first of an 8 workshops long bootcamp covering the entire application
   development process and application maintenance. We will be using a popular tech stack
   and we hope this helps students build full-stack projects with the best practices.
-  Here, we will introduce you to Express and the Project Structure`,
-    url: `https://dsc.community.dev/events/details/developer-student-clubs-mcgill-university-presents-workshop-1-introduction-to-express-and-project-structure/`
+  Here, we will introduce you to Express and the Project Structure`
   },
   {
     time: 'SEP 10, 2020',
@@ -127,25 +136,16 @@ export const pastEvents = [
 ];
 
 export const upcoming_event_one = {
-  date: 'FEB 16, 2021 at 5:30',
-  title: 'Full stack bootcamp - Workshop 2 - Virtual',
-  descriprion: `The second workshop where we help students
-  understand Express JS with real application and a hands on project`,
-  image: ws2,
-  icon: <ComputerIcon style={{ fontSize: 32 }} />,
-  url: `https://dsc.community.dev/events/details/developer-student-clubs-mcgill-university-presents-workshop-2-learn-express-js/`
+  date: 'FEB 18, 2021 at 5:30',
+  title: 'Full stack bootcamp - Workshop 3 - Virtual',
+  descriprion: `The last backend workshop before the first upcoming frontend workshop. Here we help students
+  have a deeper knowldege of Databases and Software Testing with MongoDB`,
+  image: ws3,
+  icon: <ComputerIcon style={{ fontSize: 24 }} />,
+  url: `https://dsc.community.dev/events/details/developer-student-clubs-mcgill-university-presents-workshop-3-databases-and-software-testing-with-mongodb/`
 };
 
 export const next_two_coming_events = [
-  {
-    date: 'FEB 18, 2021 at 5:30',
-    title: 'Full stack bootcamp - Workshop 3 - Virtual',
-    descriprion: `The last backend workshop before the first upcoming frontend workshop. Here we help students
-    have a deeper knowldege of Databases and Software Testing with MongoDB`,
-    image: ws3,
-    icon: <ComputerIcon style={{ fontSize: 24 }} />,
-    url: `https://dsc.community.dev/events/details/developer-student-clubs-mcgill-university-presents-workshop-3-databases-and-software-testing-with-mongodb/`
-  },
   {
     date: 'FEB 22, 2021 at 5:30',
     title: 'Full stack bootcamp - Workshop 4 - Virtual',
@@ -153,6 +153,14 @@ export const next_two_coming_events = [
     image: ws4,
     icon: <ComputerIcon style={{ fontSize: 24 }} />,
     url: `https://dsc.community.dev/events/details/developer-student-clubs-mcgill-university-presents-workshop-4-frontend-development-setup-and-api-calls/#/`
+  },
+  {
+    date: 'FEB 24, 2021 at 5:30',
+    title: 'Full stack bootcamp - Workshop 5 - Virtual',
+    descriprion: `In this workshop, we’re going to be finishing the MVP of our frontend by creating the components needed to visualize our web-app`,
+    image: ws5,
+    icon: <ComputerIcon style={{ fontSize: 24 }} />,
+    url: `https://dsc.community.dev/events/details/developer-student-clubs-mcgill-university-presents-workshop-5-frontend-development-components-and-mvp/#/`
   }
 ];
 
